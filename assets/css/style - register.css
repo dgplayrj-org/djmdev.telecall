@@ -1,0 +1,338 @@
+:root {
+  /* Cores */
+  --cor-red: #6f0413;
+  --cor-btn-submit: #c70725;
+  --cor-btn-sub-border: #9d061b;
+
+  --cor-btn-clear: #0077c7;
+  --cor-btn-clear-border: #00406b;
+  --cor-hover-btn-clear: #008fee;
+  --cor-hover-btn-clear-border: #004777;
+  
+  --cor-hover: #f00a2c;
+  --cor-link: #004a7b;
+  --cor-link-hover: #0081d6;
+  --cor-error: #ee0928;
+
+  --cor-valid-border: #00a808;
+  --cor-input-boxS: #004a7b;
+  --cor-ck-hover: #449bff;
+
+  --cor-bg: #e0e0e0;
+  --cor-bg-form: rgba(255, 255, 255, 0.960);
+  --cor-boxS-form: #37567e;
+  --cor-placeholder: #808080;
+  --cor-label: #888888;
+  --cor-label-hover: #a7a7a7;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+}
+body {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--cor-bg);
+  background-image: url(/assets/imgs/SL-bg-bl.jpg);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* ---- Página do formulário ---- */
+.container {
+  max-width: 940px;
+  padding: 30px;
+  width: 100%;
+}
+/* ---- Logo ---- */
+.logo {
+  display: flex;
+  justify-content: center;
+  padding: 1.3rem;
+}
+.logo img {
+  max-width: 100%;
+  height: auto;
+}
+/* ---- Formulário ---- */
+.form {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 4rem;
+  border-radius: 30px;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 4px 4px 8px var(--cor-boxS-form);
+  background-color: var(--cor-bg-form);
+}
+/* -- Título e subtítulo -- */
+.form-header > h1,
+.subtitle > h3 {
+  font-weight: 600;
+  display: block;
+  text-align: center;
+}
+.subtitle {
+  padding: 1.6rem 0 0.2rem;
+  border-bottom: 2px solid;
+}
+/* == Placeholder == */
+::-webkit-input-placeholder {
+  color: var(--cor-placeholder);
+  font-weight: 400;
+  font-size: 14px;
+}
+/* -- Config Labels -- */
+.input-box {
+  margin-bottom: 4px;
+  padding: 5px;
+  margin-left: 20px;
+  display: block;
+  font-size: 14px;
+}
+/* -- Config inputs -- */
+.form .input-box {
+  display: inline-block;
+  width: 30%;
+  margin-top: 20px;
+}
+.input-box > input, select, textarea {
+  outline: none;
+  width: 94%;
+  padding: 4px;
+  border: none;
+  border-bottom: 1px solid var(--cor-link);
+  transition: box-shadow 0.2s ease-in-out;
+  background-color: transparent;
+}
+/* --- Gênero --- */
+.gen-input {
+  display: inline-block;
+  padding: 0px 0px 6px;
+}
+/* - Título gen - */
+.gen-box h3 {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 7px;
+}
+/* -- Config inputs gen -- */
+.form .gen-group,
+.form .gen-input {
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+  flex-wrap: wrap;
+}
+.form .gen-input input,
+.form .gen-input label {
+  cursor: pointer;
+}
+/* -- Cor do "radio" selecionado -- */
+#masculino {
+  accent-color: var(--cor-link);
+  margin-right: 10px;
+}
+#feminino {
+  accent-color: var(--cor-red);
+}
+.gen-input {
+  display: inline-block;
+  font-size: 14px;
+}
+/* --- Efeito da borda --- */
+.input-box:hover .form-input,
+.input-box .form-input:focus {
+  box-shadow: 0 1px 0 var(--cor-link);
+}
+.input-box .form-input:valid {
+  border-bottom: 1px solid var(--cor-valid-border);
+  box-shadow: 0 1px 0 var(--cor-valid-border);
+}
+.form-input-dst:valid {
+  border-bottom: 1px solid var(--cor-valid-border);
+  box-shadow: 0 1px 0 var(--cor-valid-border);
+}
+.form-input-dst:hover,
+.form-input-dst:focus {
+  box-shadow: 0 1px 0 var(--cor-link);
+}
+/* Ícone de olho - senha */
+.fa-solid {
+  position: absolute;
+  color: var(--cor-label);
+  margin: 5px -24px;
+  cursor: pointer;
+}
+.fa-solid:hover {
+  color: var(--cor-label-hover);
+}
+/* --- Config textarea --- */
+textarea {
+  resize: none;
+  width: 100%;
+}
+/* -- Termos e condições -- */
+.ck-term {
+  display: flex;
+  font-size: 12px;
+  padding: 25px 0 0;
+  align-items: center;
+}
+.ck-term input {
+  margin: 8px;
+  cursor: pointer;
+  accent-color: var(--cor-link);
+  transition: all 0.5s;
+}
+.ck-term a {
+  transition: all 0.5s;
+}
+.ck-term a:hover {
+  color: var(--cor-ck-hover);
+  transition: all 0.5s;
+}
+/* --- Config botões --- */
+.btn > button {
+  margin: 20px 10px 0px;
+  padding: 4px 25px;
+  cursor: pointer;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 6px;
+}
+.btn-group {
+  display: flex;
+}
+/* -- Botão limpar -- */
+.btn-reset > button {
+  background-color: var(--cor-btn-clear);
+  border: 2px solid var(--cor-btn-clear-border);
+  transition: all 0.5s;
+}
+.btn-reset button:hover {
+  background-color: var(--cor-hover-btn-clear);
+  border-color: var(--cor-hover-btn-clear-border);
+  transition: all 0.5s;
+}
+/* -- Botão enviar -- */
+.btn-submit button {
+  background-color: var(--cor-btn-submit);
+  border: 2px solid var(--cor-red);
+  transition: all 0.5s;
+}
+.btn-submit button:hover {
+  background-color: var(--cor-hover);
+  border-color: var(--cor-btn-sub-border);
+  transition: all 0.5s;
+}
+/* -- Âncoras "Voltar ao Login" -- */
+.btn-signup a {
+  color: var(--cor-link);
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+.btn-signup a:hover {
+  color: var(--cor-link-hover);
+  transition: all 0.5s ease-in-out;
+  text-decoration: underline;
+}
+/* ---- Parágrafo de erro de validação ---- */
+.error-validation {
+  max-width: 216px;
+  color: var(--cor-error);
+  position: absolute;
+  margin-top: 4px;
+  font-size: 0.77rem;
+  font-weight: 500;
+}
+.template {
+  display: none;
+}
+/* --------------- */
+.error-selc {
+  color: var(--cor-error);
+  position: absolute;
+  margin-top: 54px;
+  font-size: 0.77rem;
+  font-weight: 500;
+}
+.error-gen {
+  display: none;
+}
+.error-active {
+  color: var(--cor-error);
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 8px;
+  font-size: 0.77rem;
+  font-weight: 500;
+}
+.error-checkbox {
+  display: none;
+}
+/* --- Responsividade --- */
+@media screen and (max-width: 770px) {
+    .form {
+        padding: 2rem;
+    }
+        .form .input-box {
+            width: 100%;
+        }
+            .logo img {
+                max-width: 60%;
+            }
+                .input-box {
+                    margin-left: 8px;
+                }
+                    .error-validation {
+                        max-width: 500px;
+                        font-size: .8rem;
+                    }
+                        .error-active {
+                            max-width: 500px;
+                            margin-top: 44px;
+                            font-size: .8rem;
+                        }
+}
+@media screen and (max-width: 430px) {
+    .error-validation {
+        max-width: 300px;
+        font-size: .8rem;
+    }
+        .error-active {
+            max-width: 300px;
+            margin-top: 60px;
+            font-size: .8rem;
+        }
+}
+@media screen and (max-width: 350px) {
+    .error-validation {
+        max-width: 204px;
+        font-size: .8rem;
+    }
+        .error-active {
+            max-width: 300px;
+            margin-top: 80px;
+            font-size: .8rem;
+        }
+}
+@media screen and (max-width: 310px) {
+    .error-validation {
+        max-width: 160px;
+        font-size: .8rem;
+    }
+        .error-active {
+            max-width: 300px;
+            margin-top: 70px;
+            font-size: .7rem;
+        }
+}

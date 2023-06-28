@@ -1,0 +1,400 @@
+:root {
+    /* Cores */
+    --red-default: #ca1c2a;
+    --red-default-hover: #f00a2c;
+    --cor-btn-submit: #c70725;
+    --cor-btn-border: #6f0413;
+    --cor-hover-btn: #f00a2c;
+    --cor-hover-btn-border: #9d061b;
+    --blue-default: #0077c7;
+    --blue-default-hover: #008fee;
+    --verde: #3e8b42;
+    --cinza: #979797;
+    --cor-cinza: #8f8f8f;
+    --cor-texts: #000000;
+    --cor-bg: #ffffff;
+    --cor-zap-texts: #ffffff;
+}
+.dark-mode:root {
+    /* Cores */
+    --cinza: #db3d3d;    
+    --cor-sombra: #81818167;
+    --cor-texts: #ffffff;
+    --cor-bg: #202124;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+}
+body {
+    display: flex;
+    width: 100%;
+    min-height: 50vh;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-bg);
+    color: var(--cor-texts);
+}
+/* ====- Toda Página -==== */
+.elementor-box {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5rem;
+    position: relative;
+    margin-bottom: 5rem;
+}
+/* ==- Linha de baixo do texto (span) -== */
+.divider-separator {
+    display: inline-block;
+    height: 0.1875rem;
+    background-color: var(--red-default);
+    background-position: left bottom;
+    background-size: 100% 0.125rem;
+    border-radius: 3.125rem;
+    margin-right: 0.5rem;
+    width: 7%;
+}
+/* =- Linha no título -= */
+.divider-separator-head {
+    width: 20%;
+}
+/* =-=- Seções -=-= */
+.elementor-section {
+    padding: 0 1.25rem 0;
+    width: 100%;
+}
+.nav-bar {
+    box-shadow: 0px 5px 5px var(--cor-sombra);
+}
+.footer {
+    position: relative;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 109%;
+    background-color: var(--cor-bg);
+    background-image: url(/assets/imgs/cpaas/Contato/hero11-free-img.png);
+    background-size: 198%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+    mix-blend-mode: luminosity;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+.overlay-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    opacity: 0.52;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+.container-title {
+    display: block;
+    padding: 12rem 6rem 2rem;
+    background-image: url(/assets/imgs/cpaas/Contato/Banner-Internet-Dedicada.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+.title-header {
+    position: relative;
+    font-size: 3rem;
+    color: var(--red-default);
+    padding: 0;
+}
+/* ---= Bloco listas =--- */
+.container-list {
+    padding: 1.5rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    background-color: var(--cor-bg);
+    box-shadow: 0px 0px 14px var(--cor-sombra);
+}
+/* =-=- Conteúdo da seção -=-= */
+.elementor-container {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+/* --= Elemento seção 1 =-- */
+.elementor-column {
+    padding: 0 7rem 0 0;
+}
+/*  --- Lista 1 - Whatsaap --- */
+.list-zap {
+    background-color: var(--red-default);
+}
+.list-title {
+    font-size: 1.2rem;
+    color: var(--cor-zap-texts);
+}
+.list-text {
+    color: var(--cor-zap-texts);
+}
+/* --- Lista 2 - Contatos de suporte --- */
+.list-contatos {
+    background-color: var(--verde);
+    padding: 0.4rem 1.5rem;
+    line-height: 2.3;
+}
+.list-contatos a {
+    color: var(--cor-zap-texts);
+    text-decoration: none;
+    margin-left: 0.7rem;
+}
+/* --- Email --- */
+.list-email h2 {
+    font-size: 1.4rem;
+}
+.list-email p {
+    font-size: 1.1rem;
+    color: var(--cor-cinza);
+    margin: 0;
+}
+.list-email span {
+    font-size: 2rem;
+    margin: 0;
+}
+.list-email i {
+    margin-right: 0.5rem;
+    color: var(--red-default);
+}
+/* ==== Seção 1 ==== */
+.element {
+    padding-top: 5rem;
+}
+/* -- Título -- */
+.elementor-title {
+    font-size: 2rem;
+}
+/* -- Subtítulo -- */
+.elementor-subtitle {
+    font-size: 1.2rem;
+    margin: 2rem 0 0;
+}
+/* --= Lista =-- */
+.elementor-list ul {
+    padding: 0;
+    margin: 0;
+    text-align: start;
+    list-style-type: none;
+}
+.elementor-list-item {
+    align-items: center;
+    color: var(--red-default);
+    font-size: 16px;
+}
+.elementor-list-text {
+    color: var(--red-default);
+    margin-left: 1.2rem;
+    font-size: 1rem;
+}
+.elementor-list-item {
+    display: flex;
+    justify-content: flex-start;
+}
+/* ==== Formulário ==== */
+.form-title {
+    text-align: center;
+}
+.elementor-form {
+    position: relative;
+    width: 100%;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.form-group {
+    margin: 2rem;
+}
+.btn-submit input {
+    background-color: var(--cor-btn-submit);
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    border: 2px solid;
+    border-radius: 5px;
+    border-color: var(--cor-btn-border);
+    cursor: pointer;
+    margin-top: 3rem;
+    padding: 0.27rem;
+    width: 100%;
+    transition: all 0.5s;
+}
+.btn-submit input:hover {
+    background-color: var(--cor-hover-btn);
+    border-color: var(--cor-hover-btn-border);
+    transition: all 0.5s;
+}
+/* --- Área captcha --- */
+.wrapper {
+    max-width: 380px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-left: 4rem;
+}
+.wrapper header {
+    color: var(--cor-texts);
+    font-size: 16px;
+}
+.wrapper .captcha-area {
+    display: flex;
+    height: 40px;
+    margin: 2px 0 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.captcha-area .captcha-img {
+    height: 100%;
+    width: 380px;
+    user-select: none;
+    background: var(--cor-bg);
+    border-radius: 5px;
+    position: relative;
+}
+.captcha-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    opacity: 0.95;
+}
+.captcha-img .captcha {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    color: #3b3b3b;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 10px;
+    transform: translate(-50%, -50%);
+    text-shadow: 0px 0px 2px var(--cor-cinza);
+}
+.wrapper button {
+    outline: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    background: var(--cor-btn-submit);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.wrapper button:hover {
+    background: var(--cor-hover-btn);
+}
+.captcha-area .reload-btn {
+    margin-left: 5px;
+    width: 20%;
+    height: 100%;
+    font-size: 11px;
+}
+.captcha-area .reload-btn i {
+    transition: transform 0.3s ease;
+}
+.captcha-area .reload-btn:hover i {
+    transform: rotate(50deg);
+}
+.wrapper .input-area {
+    height: 60px;
+    width: 100%;
+    position: relative;
+}
+.input-area input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding-left: 20px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid var(--cor-cinza);
+}
+.input-area input:is(:focus, :valid) {
+    padding-left: 19px;
+    border: 2px solid var(--cor-hover-btn-border);
+}
+.input-area input::placeholder {
+    color: var(--cor-cinza);
+}
+.input-area .check-btn {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    font-size: 14px;
+    height: 45px;
+    padding: 0 05px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-50%);
+}
+.input-area input:valid + .check-btn {
+    opacity: 1;
+    pointer-events: auto;
+}
+.wrapper .status-text {
+    display: none;
+    font-size: 13px;
+    text-align: center;
+    margin: 20px 0 -5px;
+}
+/* ==-- Responsividade --== */
+@media screen and (max-width: 768px) {
+    .elementor-container {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+    }
+    .overlay {
+        left: -10%;
+        width: 120%;
+        height: 100%;
+    }
+        .elementor-section {
+            padding: 0 0.625rem 1.25rem 0;
+        }
+            .elementor-box {
+                padding: 0 1rem 0 1.9rem;
+            }
+                .elementor-column {
+                    padding: 0;
+                }
+                    .elementor-text {
+                        margin: 2rem 1rem 6rem;
+                    }
+                        .elementor-form {
+                            padding: 0;
+                        }
+                            .form-title {
+                                margin-top: 2.5rem;
+                            }
+                            .list-email span {
+                                font-size: 1.2rem; 
+                            }
+                                .title-header {
+                                    font-size: 2.5rem;
+                                }
+                                    .container-title {
+                                        padding: 7rem 1.7rem 1rem;
+                                        background-size: auto 100%;
+                                    }
+                                        .wrapper {
+                                            margin: 0;
+                                        }
+}

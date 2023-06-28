@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+        <link rel="icon" type="image/svg+xml" href="./assets/imgs/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <!-- CSS Fonts Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="description" content="Página de cadastro - Telecall/Unisuam">
+    <meta name="author" content="DJM developers®">
+        <!-- Bootstrap - CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <!-- CSS Local -->
+        <link rel="stylesheet" href="./assets/css/style - navbar-footer.css">
+        <link rel="stylesheet" href="./assets/css/style - home.css">
+          <script src="https://kit.fontawesome.com/04f48c0186.js" crossorigin="anonymous"></script>
+          <!-- Bootstrap - Javascript -->
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+          <!-- jQuery - Javascript -->
+          <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <title>Projeto Telecall - Home</title>
+  </head>
+<body class="body-index">
+    <div class="container-fluid">
+        <header>
+        <!-- Barra de navegação -->
+            <nav class="navbar justify-content-end navbar-expand-lg nav-bar navbar-light bg-light">
+                <!-- Logo Navbar -->
+                <div class="col logo" id="internetDropdown">
+                    <a class="navbar-brand a-logo" href="./index.html">
+                        <img width="200" src="./assets/imgs/navbar-telecall.png" alt="Telecall - Página Inicial" data-toggle="tooltip" data-bs-placement="bottom" title="Telecall - Página Inicial">
+                    </a>
+                </div>
+                <!-- Botão de colapso para dispositivos móveis -->
+                <div class="mobile-menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <!-- Lista NavBar -->
+                <div class="navbar-collapse nav-list" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                    <!-- L1 -->
+                        <li class="nav-item dropdown" id="internetDropdown"><a class="nav-link link-mobile" href="./assets/html/UnderConstruction.html" onclick="toggleSubmenu(event)">Internet<i class="toggle-menu fa-solid fa-caret-down"></i></a>
+                            <ul class="dropdown-menu custom-dropdown-width">
+                                <li class="dropdown-item"><a class="nav-link nav-custom" href="./assets/html/UnderConstruction.html">Internet Dedicada</a></li>
+                                <li class="dropdown-item"><a class="nav-link nav-custom" href="./assets/html/UnderConstruction.html">Banda Larga</a></li>
+                                <li class="dropdown-item"><a class="nav-link nav-custom" href="./assets/html/UnderConstruction.html">Wi-Fi</a></li>
+                            </ul>
+                        </li>
+                    <!-- L2 -->
+                        <li class="nav-item dropdown" id="internetDropdown"><a class="nav-link link-mobile" href="./assets/html/cpaas/cpaas.html" onclick="toggleSubmenu(event)">CPaaS<i class="toggle-menu fa-solid fa-caret-down"></i></a>
+                            <ul class="dropdown-menu custom-dropdown-width">
+                                <li class="dropdown-item"><a class="nav-link nav-custom" href="./assets/html/cpaas/cpaas-2fa.html">Autenticação de 2 Fatores</a></li>
+                                <li class="dropdown-item"><a class="nav-link nav-custom" href="./assets/html/cpaas/cpaas-campanha.html">Gerenciamento de Campanha</a></li>
+                                <li class="dropdown-item"><a class="nav-link nav-custom" href="./assets/html/cpaas/cpaas-numero-mascara.html">Número Máscara</a></li>
+                                <li class="dropdown-item"><a class="nav-link nav-custom" href="./assets/html/cpaas/cpaas-consulta-numero.html">Consulta Número</a></li>
+                                <li class="dropdown-item"><a class="nav-link nav-custom" href="./assets/html/cpaas/cpaas-conversor.html">Conversor</a></li>
+                            </ul>
+                        </li>
+                    <!-- L3 -->    
+                        <li class="nav-item dropdown" id="internetDropdown"><a class="nav-link link-mobile" href="./assets/html/UnderConstruction.html" onclick="toggleSubmenu(event)">Telefonia<i class="toggle-menu fa-solid fa-caret-down"></i></a>
+                            <ul class="dropdown-menu custom-dropdown-width">
+                                <li class="dropdown-item"><a class="nav-link nav-custom" href="./assets/html/UnderConstruction.html">PABX IP Virtual</a></li>
+                                <li class="dropdown-item"><a class="nav-link nav-custom" href="./assets/html/UnderConstruction.html">E1 / SIP TRUNK</a></li>
+                                <li class="dropdown-item"><a class="nav-link nav-custom" href="./assets/html/UnderConstruction.html">Números 0800 e 40XX</a></li>
+                            </ul>                            
+                        </li>
+                    <!-- L4 -->
+                        <li class="nav-item dropdown" id="internetDropdown"><a class="nav-link link-mobile" href="./assets/html/UnderConstruction.html" onclick="toggleSubmenu(event)">Rede e infraestrutura<i class="toggle-menu fa-solid fa-caret-down"></i></a>
+                            <ul class="dropdown-menu custom-dropdown-width">
+                                <li class="dropdown-item"><a class="nav-link nav-custom" href="./assets/html/UnderConstruction.html">Ponto-a-Ponto</a></li>
+                                <li class="dropdown-item"><a class="nav-link nav-custom" href="./assets/html/UnderConstruction.html">MPLS</a></li>
+                                <li class="dropdown-item"><a class="nav-link nav-custom" href="./assets/html/UnderConstruction.html">Fibra Apagada e Dutos</a></li>
+                                <li class="dropdown-item"><a class="nav-link nav-custom" href="./assets/html/UnderConstruction.html">Co-locations</a></li>
+                            </ul>
+                        </li>
+                    <!-- L5 -->
+                        <li class="nav-item dropdown" id="internetDropdown"><a class="nav-link link-mobile" href="./assets/html/UnderConstruction.html" onclick="toggleSubmenu(event)">Mobilidade<i class="toggle-menu fa-solid fa-caret-down"></i></a>
+                            <ul class="dropdown-menu custom-dropdown-width">
+                                <li class="dropdown-item"><a class="nav-link nav-custom" href="./assets/html/UnderConstruction.html">Celular Empresarial</a></li>
+                                <li class="dropdown-item"><a class="nav-link nav-custom" href="./assets/html/UnderConstruction.html">MVNA/E</a></li>
+                            </ul>
+                        </li>
+                    <!-- L6 -->
+                        <li class="nav-item dropdown" id="internetDropdown"><a class="nav-link link-mobile" href="./assets/html/UnderConstruction.html" onclick="toggleSubmenu(event)">Eventos</a></li>
+                    <!-- L7 -->
+                        <li class="nav-item dropdown" id="internetDropdown"><a class="nav-link link-mobile" href="./assets/html/UnderConstruction.html" onclick="toggleSubmenu(event)">Outras soluções<i class="toggle-menu fa-solid fa-caret-down"></i></a>
+                            <ul class="dropdown-menu custom-dropdown-width">
+                                <li class="dropdown-item"><a class="nav-link nav-custom" href="./assets/html/UnderConstruction.html">Outsourcing de Hardware</a></li>
+                            </ul>
+                        </li>
+                    <!-- L8 -->
+                        <li class="nav-item dropdown" id="internetDropdown"><a class="nav-link link-mobile" href="./assets/html/UnderConstruction.html" onclick="toggleSubmenu(event)">Mais informações<i class="toggle-menu fa-solid fa-caret-down"></i></a>
+                            <ul class="dropdown-menu custom-dropdown-width">
+                                <li class="dropdown-item"><a class="nav-link nav-custom" href="./assets/html/UnderConstruction.html">Empresas</a></li>
+                                <li class="dropdown-item"><a class="nav-link nav-custom" href="./assets/html/UnderConstruction.html">Wholesale</a></li>
+                                <li class="dropdown-item"><a class="nav-link nav-custom" href="./assets/html/UnderConstruction.html">Institucional</a></li>
+                                <li class="dropdown-item"><a class="nav-link nav-custom" href="./assets/html/UnderConstruction.html">Carreiras</a></li>
+                                <li class="dropdown-item"><a class="nav-link nav-custom" href="./assets/html/UnderConstruction.html">FAQ</a></li>
+                            </ul>
+                        </li>
+                    <!-- WhatsApp -->
+                        <li class="nav-item dropdown menu-zap dropzap" id="internetDropdown">
+                            <a class="nav-link link-mobile custom-nav-link" href="https://api.whatsapp.com/send?phone=552130301010&text=%23Comercial" onclick="toggleSubmenu(event)">
+                                <svg width="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path style="fill:#EDEDED;" d="M0,512l35.31-128C12.359,344.276,0,300.138,0,254.234C0,114.759,114.759,0,255.117,0 S512,114.759,512,254.234S395.476,512,255.117,512c-44.138,0-86.51-14.124-124.469-35.31L0,512z"></path><path style="fill:#55CD6C;" d="M137.71,430.786l7.945,4.414c32.662,20.303,70.621,32.662,110.345,32.662 c115.641,0,211.862-96.221,211.862-213.628S371.641,44.138,255.117,44.138S44.138,137.71,44.138,254.234 c0,40.607,11.476,80.331,32.662,113.876l5.297,7.945l-20.303,74.152L137.71,430.786z"></path><path style="fill:#FEFEFE;" d="M187.145,135.945l-16.772-0.883c-5.297,0-10.593,1.766-14.124,5.297 c-7.945,7.062-21.186,20.303-24.717,37.959c-6.179,26.483,3.531,58.262,26.483,90.041s67.09,82.979,144.772,105.048 c24.717,7.062,44.138,2.648,60.028-7.062c12.359-7.945,20.303-20.303,22.952-33.545l2.648-12.359 c0.883-3.531-0.883-7.945-4.414-9.71l-55.614-25.6c-3.531-1.766-7.945-0.883-10.593,2.648l-22.069,28.248 c-1.766,1.766-4.414,2.648-7.062,1.766c-15.007-5.297-65.324-26.483-92.69-79.448c-0.883-2.648-0.883-5.297,0.883-7.062 l21.186-23.834c1.766-2.648,2.648-6.179,1.766-8.828l-25.6-57.379C193.324,138.593,190.676,135.945,187.145,135.945"></path><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+                                </svg> WhatsApp<i class="toggle-menu fa-solid fa-caret-down"></i></a>
+                                    <ul class="dropdown-menu custom-dropdown-width">
+                                        <li class="dropdown-item item-zap"><a class="nav-link nav-custom" href="./assets/html/cpaas/cpaas-contato.html">Contato</a></li>
+                                    </ul>
+                        </li>
+                    <!-- Troca de idioma -->
+                            <div class="icon">
+                                <!-- ---- Ícone Globo-Idioma ---- -->
+                                <li class="nav-item dropdown custom-dropdown navbar-inverse" id="internetDropdown">
+                                    <a class="icons-custom nav-link link-mobile" href="#" onclick="toggleSubmenu(event)" alt="Idiomas" data-toggle="tooltip" data-bs-placement="left" title="🌎Idioma">
+                                        <i class="fa-solid fa-earth-americas"></i>
+                                    </a>
+                                    <!-- Lista - Idiomas -->
+                                    <ul class="dropdown-menu custom-dropdown-width dropdown-menu-center">
+                                        <!-- Português -->
+                                        <li class="dropdown-item custom-item">
+                                            <a class="nav-link" href="#">
+                                                <img 
+                                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAn1BMVEUAYQAAWwAAUgAARwAAOgAALgAAIwB/voB4uni242pttG1kr2Rdq11RpFEAGAD9/Uv8/VT690U/mz83lTguki4ADQCp2lJ3d+Q+dfpkaun47zii1B9IoEhgslHOy6fZ5virw/Iubfhsc6v29iMfih+Wy3Nbg+lzm/m61vd+oNr08hZ2uDcAAQCPlLSuraIzmA8yjzKw3z8nXvcTgxM1pTDYD/UeAAAAfUlEQVR4AUWIA3oFMBCE/4mT2nbvf6biQ91n27tjAaDNi7gaFuLAIexiUDc6QKUfhKaVva5Dh/Xu3rwrqYPTzfeYVNvrRvUiUUbvO5hIVR0f8f7TYCo797+6POgOqtm9n8nGQ1qP/395v7cHw4FsQohnXhE3DOSQSETOmN8EHiUfBxs2q7sAAAAASUVORK5CYII=" 
+                                                    alt="Português" 
+                                                    width="17" 
+                                                    height="12" 
+                                                    style="width: 17px; height: 12px;"
+                                                > Português
+                                            </a>
+                                        </li>
+                                        <!-- English -->
+                                        <li class="dropdown-item custom-item">
+                                            <a class="nav-link" href="#">
+                                                <img 
+                                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAmVBMVEViZsViZMJiYrf9gnL8eWrlYkjgYkjZYkj8/PujwPybvPz4+PetraBEgfo+fvo3efkydfkqcvj8Y2T8UlL8Q0P8MzP9k4Hz8/Lu7u4DdPj9/VrKysI9fPoDc/EAZ7z7IiLHYkjp6ekCcOTk5OIASbfY/v21takAJrT5Dg6sYkjc3Nn94t2RkYD+y8KeYkjs/v7l5fz0dF22YkjWvcOLAAAAgElEQVR4AR2KNULFQBgGZ5J13KGGKvc/Cw1uPe62eb9+Jr1EUBFHSgxxjP2Eca6AfUSfVlUfBvm1Ui1bqafctqMndNkXpb01h5TLx4b6TIXgwOCHfjv+/Pz+5vPRw7txGWT2h6yO0/GaYltIp5PT1dEpLNPL/SdWjYjAAZtvRPgHJX4Xio+DSrkAAAAASUVORK5CYII=" 
+                                                    alt="English" 
+                                                    width="17" 
+                                                    height="12" 
+                                                    style="width: 17px; height: 12px;" 
+                                                    _mstalt="94341" 
+                                                    _msthash="13"
+                                                > English
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </div>
+                            <!-- ---- Modo dark ---- -->
+                            <div class="nav-item icon icons-custom nav-link link-mobile transition-item" id="internetDropdown" alt="Modo Dark" data-toggle="tooltip" data-placement="bottom" title="Tema">
+                              <input class="cb-dark" type="checkbox" name="Dark Mode" id="dark-mode-toggle">
+                                <label class="label-chk" for="chk">
+                                  <i class="dark-icon fa-solid fa-moon"></i>
+                                  <i class="dark-icon fa-solid fa-sun"></i>
+                                  <div class="ball"></div>
+                                </label>
+                            </div>                      
+                            <!-- ---- Área do usuário ---- -->
+                            <div class="nav-item icon dropdown custom-dropdown" id="internetDropdown">
+                              <a id="userLink" class="icons-user nav-link link-mobile transition-item" href="./assets/html/access/login.html" alt="User" data-toggle="tooltip" data-bs-placement="left" title="👤 Área do usuário">
+                                <i class="fa-icon fa-solid fa-user"></i><span id="username">Usuário</span>
+                              </a>
+                              <ul class="dropdown-menu user custom-dropdown-width dropdown-menu-center">
+                                <li class="dropdown-item custom-item">
+                                  <button onclick="sair()" id="logoutBtn" class="hide"><i class="fa-solid fa-right-from-bracket fa-rotate-180"></i> Sair</button>
+                                </li>
+                              </ul>
+                            </div>                                                                            
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <script src="/assets/js/navbar-footer.js"></script>
+        <!-- ---- Conteúdo da Página ---- -->
+        <main class="dark-mode!">
+          <!-- Bannes Slide -->
+          <section class="elementor-banner">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./assets/imgs/internetdedicada.png" class="d-block w-100" alt="Imagem 1">
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/imgs/PABX2.png" class="d-block w-100" alt="Imagem 2">
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/imgs/cel-empresarial-telecall-min.png" class="d-block w-100" alt="Imagem 3">
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/imgs/CEL-EMPRESARIAL-2-1.png" class="d-block w-100" alt="Imagem 4">
+                </div>
+              </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Próximo</span>
+                </button>
+            </div>
+          </section>
+            <div class="elementor-box">
+              <!-- Elemento 1 -->
+              <section class="elementor-section">
+                <div class="elementor-column element">
+                  <!-- Título -->
+                  <div class="elementor-title"><strong>Soluções Inteligentes para sua empresa</strong></div>                    
+                </div>
+              </section>
+              <!-- Elemento 2 -->
+              <section class="elementor-section section-card">
+                <div class="elementor-container card-container">
+                  <!-- Card 1 -->
+                  <div class="elementor-card">
+                    <div class="card-box">
+                      <div class="card">
+                        <!-- Icon -->
+                        <div class="icon-card"><img src="./assets/imgs/globo.svg" alt="Internet"></div>
+                          <!-- Título Card -->
+                          <div class="card-title">
+                            <h3>INTERNET</h3>
+                              <p>Solução de internet em Fibra com alta qualidade e disponibilidade.<br><br></p>
+                          </div>
+                            <div class="elementor-button-wrapper"><a href="#" class="elementor-button">Saiba  Mais</a></div>
+                      </div>
+                    </div>            
+                  </div>
+                  <!-- Card 2 -->
+                  <div class="elementor-card">
+                    <div class="card-box">
+                      <div class="card">
+                        <!-- Icon -->
+                        <div class="icon-card"><img src="./assets/imgs/telefonia.svg" alt="Telefonia"></div>
+                          <!-- Título Card -->
+                          <div class="card-title">
+                            <h3>TELEFONIA</h3>
+                              <p>Solução inteligente de PABX IP na núvem para sua telefonia fixa.<br><br></p>
+                          </div>
+                            <div class="elementor-button-wrapper"><a href="#" class="elementor-button">Saiba  Mais</a></div>
+                      </div>
+                    </div>            
+                  </div>
+                  <!-- Card 3 -->
+                  <div class="elementor-card">
+                    <div class="card-box">
+                      <div class="card">
+                        <!-- Icon -->
+                        <div class="icon-card"><img src="./assets/imgs/mobilidade.svg" alt="Mobilidade"></div>
+                          <!-- Título Card -->
+                          <div class="card-title">
+                            <h3>MOBILIDADE</h3>
+                              <p>Monte planos de celular personalizados para a sua empresa e pague apenas pelo que precisa.</p>
+                          </div>
+                            <div class="elementor-button-wrapper"><a href="#" class="elementor-button">Saiba  Mais</a></div>
+                      </div>
+                    </div>            
+                  </div>
+                </div>        
+              </section>
+              <!-- Elemento 3 -->
+              <section class="elementor-section">
+                <div class="elementor-column element">
+                  <!-- Título -->
+                  <div class="elementor-title"><strong>Conheça nossos planos de mobilidade</strong></div>                    
+                </div>
+              </section>              
+              <!-- Elemento 4 -->
+              <section class="elementor-section">
+                <div class="elementor-container list-container">
+                  <!-- IMG -->
+                  <div class="list-image"><img width="570" src="./assets/imgs/Planos-de-celular-empresarial-8.png" alt="2FA Steps"></div>
+                    <!-- Lista -->
+                      <div class="elementor-list-container">
+                        <ul class="elementor-list-items">
+                        <!-- L1 -->
+                          <li class="elementor-list-item">
+                            <span><img src="./assets/imgs/icone-planos-customizaveis-1.png" alt=""></span>
+                              <span>PLANOS CUSTOMIZÁVEIS</span>
+                          </li>
+                        <!-- L2 -->
+                          <li class="elementor-list-item">
+                            <span><img src="./assets/imgs/icone-traga-seu-celular-e-aparelho-3.png" alt=""></span>
+                              <span>TRAGA SEU NÚMERO E APARELHO</span>
+                          </li>
+                          <!-- L3 -->
+                          <li class="elementor-list-item">
+                            <span><img src="./assets/imgs/icone-receba-seu-chip-na-sua-empresa-2.png" alt=""></span>
+                              <span>RECEBA SEU CHIP NA SUA EMPRESA</span>
+                          </li>
+                        <!-- L4 -->
+                          <li class="elementor-list-item">
+                            <span><img src="./assets/imgs/icone-maior-rede-movel-do-brasil-2.png" alt=""></span>
+                              <span>MAIOR REDE MÓVEL DO BRASIL</span>
+                          </li>
+                        <!-- L5 -->
+                          <li class="elementor-list-item">
+                            <span><img src="./assets/imgs/icone-atendimento-diferenciado-1.png" alt=""></span>
+                              <span>ATENDIMENTO DIFERENCIADO</span>
+                          </li>
+                        </ul>
+                      </div>
+                </div>
+              </section>
+              <!-- Elemento 5 -->
+              <section class="elementor-section">
+                <div class="elementor-head">
+                  <div><h2><b>Próximos Eventos</b></h2></div><span class="divider-separator"></span>
+                </div>
+              </section>
+              <!-- Elemento 6 -->
+              <section class="elementor-section">
+                <div class="container-widgetbox">
+                  <!-- ---- Widget 1 ---- -->
+                    <div class="elementor-widgetbox">
+                      <div class="widget">
+                        <!-- Texto -->
+                        <div class="elementor-widgetbox-text">
+                          <p><b>GCCM Rio de Janeiro</b></p><span class="divider-separator-card"></span>
+                          <p class="event-info">30 e 31 de agosto</p>
+                        </div>
+                        <!-- IMG -->
+                        <div class="elementor-widgetbox-image img-color"><img src="/assets/imgs/thumb-evento-1.png" alt="Laptop Lock"></div>
+                      </div>                      
+                    </div>
+                  <!-- ---- Widget 2 ---- -->
+                    <div class="elementor-widgetbox">
+                      <div class="widget">
+                        <!-- Texto -->
+                        <div class="elementor-widgetbox-text">
+                          <p><b>Americas 2023 GCCM Miami</b></p><span class="divider-separator-card"></span>
+                          <p class="event-info">12 e 13 de dezembro</p>
+                        </div>
+                        <!-- IMG -->
+                        <div class="elementor-widgetbox-image img-color"><img src="/assets/imgs/thumb-Agenda-3.png" alt="Laptop Lock"></div>
+                      </div>                      
+                    </div>
+                  <!-- ---- Widget 3 ---- -->
+                    <div class="elementor-widgetbox">
+                      <div class="widget">
+                        <!-- Texto -->
+                        <div class="elementor-widgetbox-text">
+                          <p><b>Europe 2023 GCCM Berlim</b></p><span class="divider-separator-card"></span>
+                          <p class="event-info">27 e 28 de junho</p>
+                        </div>
+                        <!-- IMG -->
+                        <div class="elementor-widgetbox-image img-color"><img src="/assets/imgs/thumb-Agenda-2.png" alt="Laptop Lock"></div>
+                      </div>                      
+                    </div>
+                  <!-- ---- Widget 4 ---- -->
+                    <div class="elementor-widgetbox">
+                      <div class="widget">
+                        <!-- Texto -->
+                        <div class="elementor-widgetbox-text">
+                          <p><b>Capacity Messaging & SMS World, Londres</b></p><span class="divider-separator-card"></span>
+                          <p class="event-info">19 e 20 de junho</p>
+                        </div>
+                        <!-- IMG -->
+                        <div class="elementor-widgetbox-image img-color"><img src="/assets/imgs/Agenda-1.png" alt="Laptop Lock"></div>
+                      </div>                      
+                    </div>
+                  <!-- ---- Widget 5 ---- -->
+                    <div class="elementor-widgetbox">
+                      <div class="widget">
+                        <!-- Texto -->
+                        <div class="elementor-widgetbox-text">
+                          <p><b>Futurecom, São Pauloo</b></p><span class="divider-separator-card"></span>
+                          <p class="event-info">03 e 05 de outubro</p>
+                        </div>
+                        <!-- IMG -->
+                        <div class="elementor-widgetbox-image img-color"><img src="/assets/imgs/Agenda.png" alt="Laptop Lock"></div>
+                      </div>                      
+                    </div>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+                </div>
+              </section>
+              <!-- Elemento 7 -->
+              <section class="elementor-section">
+                <div class="mapa-container elementor-head">
+                  <div class="mapa-text"><h2><b>Presença em todo Rio de Janeiro...</b></h2></div>
+                  <div class="mapa-image"><img width="1250" src="./assets/imgs/mapa-fibra-rj.png" alt="2FA Steps"></div>
+                </div>
+              </section>
+              <!-- Elemento 8 -->
+            <section>
+              <div class="elementor-container container-qs">                
+                  <div class="elementor-text">
+                    <!-- Título e texto 1 -->
+                    <div class="elementor-head-title"><h2><b>Quem Somos</b></h2></div>
+                      <!-- Parágrafo -->
+                      <div class="elementor-content">
+                        <p>A Telecall é uma operadora de telecomunicações brasileira que oferece a seus clientes o mais alto padrão de qualidade, velocidade e acessibilidade em soluções de comunicação. Serviços que incluem uma ampla gama de valores agregados, oferecendo aos clientes operações mais produtivas, inovadoras e eficazes. Com mais de 20 anos de experiência na indústria global, a Telecall hoje é sinônimo de qualidade e eficiência.</p>
+                      </div>
+                  </div>
+                  <!-- IMG -->
+                <div class="elementor-image"><img width="450" src="/assets/imgs/cartao-sem-mao-v1-1024x990.png" alt="API CPaaS"></div>
+              </div>
+            </section>
+
+            </div>
+            
+        </main>
+        <!-- ---- Rodapé da Página ---- -->
+        <div class="footer">
+            <!-- ---- Mídias sociais ---- -->
+            <section class="section-footer sec-social">
+                <div class="footer-cont">
+                    <!-- Logo Telecall footer -->
+                    <div class="logo-footer" id="internetDropdown">
+                        <a href="/index.html">
+                            <img width="130" alt="Logo Telecall - footer" data-toggle="tooltip" data-bs-placement="bottom" title="Telecall - Página Inicial" src="/assets/imgs/telecall-logo-white.png">
+                        </a>
+                    </div>
+                        <!-- Título redes sociais -->
+                        <div><p class="title-social">Acesse nossas redes sociais</p></div>                    
+                            <!-- ---- Links redes sociais ---- -->
+                            <div class="social-media">
+                                <!-- Icon Facebook -->
+                                <a href="#" class="icon-social" alt="Facebook" title="Facebook" data-toggle="tooltip" data-bs-placement="left"><i class="fa-brands fa-facebook"></i></a>                    
+                                <!-- Icon Instagram -->
+                                <a href="#" class="icon-social" alt="Instagram" title="Instagram" data-toggle="tooltip" data-bs-placement="left"><i class="fa-brands fa-instagram"></i></a>                    
+                                <!-- Icon LinkedIn -->
+                                <a href="#" class="icon-social" alt="LinkedIn" title="LinkedIn" data-toggle="tooltip" data-bs-placement="left"><i class="fa-brands fa-linkedin"></i></a>                    
+                            </div>
+                    <!-- / -->
+                </div>
+            </section>
+            <!-- Links footer -->
+            <section class="section-footer sec-links">
+                <!-- Blocos 0 e 1 -->
+                <div class="links-info">
+                    <!-- Bloco 0 -->
+                    <div class="bloco-group bl-mobile">
+                        <ul class="bloco">
+                            <!-- BL1 -->
+                            <li class="bl"><a href="#">Institucional</a></li>
+                            <!-- BL2 -->
+                            <li class="bl"><a href="#">Depoimentos</a></li>
+                            <!-- BL3 -->
+                            <li class="bl"><a href="#">Carreiras</a></li>
+                            <!-- BL4 -->
+                            <li class="bl"><a href="#">Contato</a></li>
+                            <!-- BL5 -->
+                            <li class="bl"><a href="#">Vendas</a></li>
+                            <!-- BL6 -->
+                            <li class="bl"><a href="#">FAQ</a></li>
+                            <!-- BL7 -->
+                            <li class="bl"><a href="#">Política e Privacidade</a></li>
+                            <!-- / -->
+                        </ul>
+                    </div>
+                    <!-- Bloco 1 -->
+                    <div class="bloco-group-container0">
+                        <!-- Título -->
+                        <div class="bloco-header"><h1>Contractos</h1></div>
+                        <!--   //   -->
+                            <div class="bloco-group bl-mobile">
+                                <ul class="bloco">
+                                    <!-- BL8 -->
+                                    <li class="bl"><a href="#">Manual dos Telefones</a></li>
+                                    <!-- BL9 -->
+                                    <li class="bl"><a href="#">Prestação STFC</a></li>
+                                    <!-- BL10 -->
+                                    <li class="bl"><a href="#">Adesão e Prestação do SCM BL</a></li>
+                                    <!-- BL11 -->
+                                    <li class="bl"><a href="#">Adesão e Prestação do SCM IP</a></li>
+                                    <!-- BL12 -->
+                                    <li class="bl"><a href="#">Prestação SMP</a></li>
+                                    <!-- BL13 -->
+                                    <li class="bl"><a href="#">Cobertura SMP</a></li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+                <!-- --- -->
+                <div class="menu-footer">
+                    <!-- Bloco 2 -->
+                    <div class="bloco-group-container">
+                        <!-- Título -->
+                        <div class="bloco-header"><h1><a href="#">Internet</a></h1></div>
+                        <!--   //   -->
+                            <div class="bloco-group">
+                                <ul class="bloco">
+                                    <!-- BL14 -->
+                                    <li class="bl"><a href="#">Link Dedicado</a></li>
+                                    <!-- BL15 -->
+                                    <li class="bl"><a href="#">Banda larga</a></li>
+                                    <!-- BL16 -->
+                                    <li class="bl"><a href="#">Wi-Fi</a></li>
+                                </ul>
+                            </div>
+                    </div>
+                    <!-- Bloco 3 -->
+                    <div class="bloco-group-container">
+                        <!-- Título -->
+                        <div class="bloco-header"><h1><a href="./assets/html/cpaas/cpaas.html">CPaaS</a></h1></div>
+                        <!--   //   -->
+                            <div class="bloco-group">
+                                <ul class="bloco">
+                                    <li class="bl"><a href="./assets/html/cpaas/cpaas-2fa.html">2FA</a></li>
+                                    <li class="bl"><a href="./assets/html/cpaas/cpaas-campanha.html">Gerenciamento de Campanha</a></li>
+                                    <li class="bl"><a href="./assets/html/cpaas/cpaas-numero-mascara.html">Número Máscara</a></li>
+                                    <li class="bl"><a href="./assets/html/cpaas/cpaas-consulta-numero.html">Consulta Número</a></li>
+                                    <li class="bl"><a href="./assets/html/cpaas/cpaas-conversor.html">Conversor</a></li>
+                                </ul>
+                            </div>
+                    </div>
+                    <!-- Bloco 4 -->
+                    <div class="bloco-group-container">
+                        <!-- Título -->
+                        <div class="bloco-header"><h1><a href="#">Outras Soluções</a></h1></div>
+                        <!--   //   -->
+                            <div class="bloco-group">
+                                <ul class="bloco">
+                                    <!-- BL17 -->
+                                    <li class="bl"><a href="#">Outsourcing de Hardware</a></li>
+                                </ul>
+                            </div>
+                    </div>
+                    <!-- Bloco 5 -->
+                    <div class="bloco-group-container">
+                        <!-- Título -->
+                        <div class="bloco-header"><h1><a href="#">Telephony</a></h1></div>
+                        <!--   //   -->
+                            <div class="bloco-group">
+                                <ul class="bloco">
+                                    <!-- BL18 -->
+                                    <li class="bl"><a href="#">PABX IP Virtual</a></li>
+                                    <!-- BL19 -->
+                                    <li class="bl"><a href="#">E1</a></li>
+                                    <!-- BL20 -->
+                                    <li class="bl"><a href="#">Números 0800 e 40XX</a></li>
+                                </ul>
+                            </div>
+                    </div>
+                    <!-- Bloco 6 -->
+                    <div class="bloco-group-container">
+                        <!-- Título -->
+                        <div class="bloco-header"><h1><a href="#">Mobility</a></h1></div>
+                        <!--   //   -->
+                            <div class="bloco-group">
+                                <ul class="bloco">
+                                    <!-- BL21 -->
+                                    <li class="bl"><a href="#">Celular Empresarial</a></li>
+                                    <!-- BL22 -->
+                                    <li class="bl"><a href="#">MVNA</a></li>
+                                </ul>
+                            </div>
+                    </div>
+                    <!-- Bloco 7 -->
+                    <div class="bloco-group-container">
+                        <!-- Título -->
+                        <div class="bloco-header"><h1><a href="#">Networks and Infraestructure</a></h1></div>
+                        <!--   //   -->
+                            <div class="bloco-group">
+                                <ul class="bloco">
+                                    <!-- BL23 -->
+                                    <li class="bl"><a href="#">Ponto-a-Ponto</a></li>
+                                    <!-- BL24 -->
+                                    <li class="bl"><a href="#">MPLS</a></li>
+                                    <!-- BL25 -->
+                                    <li class="bl"><a href="">Fibra Apagada e Dutos</a></li>
+                                    <!-- BL26 -->
+                                    <li class="bl"><a href="">Co-location</a></li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>            
+            </section>
+        </div>
+        <!-- Copyright -->
+        <footer>
+          <section class="sec-copy">
+              <div class="">
+                  <p class="copy">Copyright © 2018 Telecall. Todos os direitos reservados.</p>
+              </div>
+          </section>
+        </footer>
+    </div>
+</body>
+</html>

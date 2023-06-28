@@ -1,0 +1,305 @@
+:root {
+    /* Cores */
+    --red-default: #ca1c2a;
+    --red-default-hover: #f00a2c;
+    --blue-default: #0077c7;
+    --blue-default-hover: #008fee;
+    --verde: #3e8b42;
+    --cinza: #979797;
+    --cor-texts: #000000;
+    --cor-bg: #ffffff;
+    /* img color */
+    --filter: invert(0%);
+}
+.dark-mode:root {
+    /* Cores */
+    --cinza: #db3d3d;
+    --cor-texts: #ffffff;
+    --cor-bg: #202124;
+    /* img color */
+    --filter: invert(100%);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+}
+body {
+    display: flex;
+    width: 100%;
+    min-height: 50vh;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor-texts) !important;
+    background-color: var(--cor-bg) !important;
+}
+main {
+    padding: 0 1.7rem;
+}
+/* ====- Toda Página -==== */
+.elementor-box {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 1.9rem;
+}
+/* ==- Linha de baixo do texto (span) -== */
+.divider-separator {
+    display: inline-block;
+    height: 0.1875rem;
+    background-color: var(--red-default);
+    background-position: left bottom;
+    background-size: 100% 0.125rem;
+    border-radius: 3.125rem;
+    margin-right: 0.5em;
+    width: 7%;
+    margin-bottom: 2.5rem;
+}
+/* =- Linha no título -= */
+.divider-separator-head {
+    width: 20%;
+}
+/* =-=- Seções -=-= */
+.elementor-section {
+    padding: 0 1.25rem 0;
+    width: 100%;
+}
+/* =-=- Conteúdo da seção -=-= */
+.elementor-container {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+/* --= Elemento seção 1 (Título, subtítulo, botôes) =-- */
+.elementor-column {
+    padding: 0 0 0 1rem;
+}
+/* ==== Seção 1 ==== */
+/* -- Espaço topo elemeto 1 seção 1 -- */
+.element {
+    padding-top: 5.625rem;
+}
+/* -- Título -- */
+.elementor-title {
+    font-size: 2.3rem;
+    margin-top: 1.0625rem;
+}
+/* -- Subtítulo -- */
+.elementor-subtitle {
+    font-size: 1.7rem;
+    line-height: 1.7;
+    margin-bottom: 1.25rem;
+}
+/* -- Botão "Cadastre-se" e "Fale com..." -- */
+.elementor-button {
+    padding: 0.5rem 1.875rem;
+    border-radius: 0.375rem;
+    margin-top: 1.25rem;
+    cursor: pointer;
+}
+/* -- Icon seta botões -- */
+.elementor-button span {
+    font-weight: 600;
+}
+.elementor-button a {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+/* -- Botão "Cadastre-se" -- */
+.btn-cad {
+    background-color: var(--red-default);
+    transition: all 0.5s;
+}
+.btn-cad:hover {
+    background-color: var(--red-default-hover);
+    transition: all 0.5s;
+}
+/* -- Botão "Fale com..." -- */
+.btn-spk {
+    background-color: var(--blue-default);
+    transition: all 0.5s;
+}
+.btn-spk:hover {
+    background-color: var(--blue-default-hover);
+    transition: all 0.5s;
+}
+.elementor-button a, span {
+    margin-left: 0.3125rem;
+}
+/* -- Ícone seta botão -- */
+.fa {
+    margin-left: 1rem;
+}
+/* -- Imagem -- */
+.elementor-image {
+    width: auto;
+    padding: 1.25rem;
+    margin: 0 8rem 0;
+}
+.img-color img {
+    filter: var(--filter);
+}
+/* ==== Seção 2/4/6 ==== */
+.elementor-head h2 {
+    font-size: 2.3125rem;
+    margin-top: 2.5rem;
+}
+/* ==== Seção 3 ==== */
+.container-widgetbox {
+    display: flex;
+    padding: 0 1rem;
+}
+.elementor-widgetbox-image {
+    text-align: center;  
+}
+.elementor-widgetbox-image img {
+    width: 90%;
+}
+.elementor-widgetbox-text {
+    text-align: justify;
+    font-size: 0.93rem;
+    padding: 0 1.4rem;
+}
+/* ==== Seção 5 ==== */
+.list-container {
+    padding: 0px;
+    align-items: center;
+}
+.elementor-list-container ul {
+    padding: 0;
+    margin: 0;
+    text-align: start;
+    list-style-type: none;
+    line-height: 2.3;
+}
+.elementor-list-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.elementor-list-container i {
+    color: var(--verde);
+    font-size: 18px;
+    margin-right: 0.7rem;
+}
+/* ==== Seção 7 ==== */
+.elementor-info {
+    display: flex;
+    justify-content: center;
+}
+.card-info-icon i {
+    margin: 0;
+    margin-bottom: 1.25rem;
+    color: var(--red-default);
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+}
+.card-info-title h2 {
+    font-size: 1.5rem;
+}
+.card-info {
+    padding: 1.875rem 0;
+    width: 12.75rem;
+    height: 25rem;
+    text-align: center;
+}
+.card-info-text {
+    text-align: start;
+    font-size: 14px;
+    line-height: 2;
+    padding: 1rem;
+}
+.card-info-text ul {
+    padding: 0;
+    list-style-type: none;
+}
+.card-info-text li {
+    display: flex;
+    align-items: center;
+}
+.card-info-text li i {
+    margin-right: 0.5rem;
+}
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .elementor-container {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+    }
+        .elementor-section {
+            padding: 0;
+            margin: 0;
+        }
+        .elementor-box {
+            padding: 1rem;
+        }
+            .elementor-button {
+                padding: 1rem 2rem;
+                font-size: 1.3rem;
+                text-align: center;
+                line-height: 1;
+            }
+                .elementor-image {
+                    margin: 0;
+                    padding: 0;
+                    width: 100%;
+                }
+                    .elementor-image img {
+                        margin: 0;
+                        width: 100%;
+                    }    
+                        .elementor-subtitle p {
+                            font-size: 2rem;
+                        }
+                            .fa {
+                                margin-left: 0.875rem;
+                                font-size: 1rem;
+                            }
+                                .container-widgetbox {
+                                    display: block;
+                                }
+                                    .container-widgetbox img {
+                                        width: 80%;
+                                    }
+                                        .list-image img {
+                                            width: 100%;
+                                        }
+                                        .elementor-widgetbox-text {
+                                            font-size: 1.2rem;
+                                            border-bottom: 1px solid gray;
+                                        }
+                                            .elementor-list-item {
+                                                display: flex;
+                                                justify-content: flex-start;
+                                                line-height: 1.7;
+                                                margin: 2rem 0;
+                                                font-size: 1.2rem;
+                                            }
+                                        .elementor-list-container i {
+                                            font-size: 1.5rem;
+                                        }
+                                    .card-info {
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                .card-info-icon i {
+                                    font-size: 4rem;
+                                }
+                            .card-info-title b {
+                                font-size: 2.4rem;
+                            }
+                        .card-info-text  {
+                            margin-left: 1.7rem;
+                            font-size: 1rem;
+                        }
+}  

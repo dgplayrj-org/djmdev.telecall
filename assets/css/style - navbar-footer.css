@@ -1,0 +1,469 @@
+:root {
+  --cor-primaria: #ca1c2a;
+  --cor-secundaria: #6a0f16;
+  --cor-sombra: #81818167;
+  --cor-menu: #ffffff;
+  --cor-hover: #440000;
+  --cor-hover-item: #420000;
+  --cor-background-hover: #6a0f16;
+  --cor-icone-globo-hover: #380000;
+  --cor-menu-hover-zap: linear-gradient(#00cc00, #008b00);
+  --cor-fundo-dropdown: #000000;
+}
+.dark-mode:root {
+  /* Cores */
+  --cor-sombra: #ff000038;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+.body-index {
+  padding: 0rem;
+  min-height: 100vh;
+}
+/* --- Botão modo Dark --- */
+body {  
+  transition: background 0.2s linear;
+}
+.custom-item img {
+  filter: invert(0%) !important;
+}
+.cb-dark {
+  opacity: 0;
+  position: absolute;
+  cursor: pointer;
+  width: 40px;
+  z-index: 1;
+  
+}
+.label-chk {
+  background-color: var(--cor-hover);
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  width: 50px;
+  height: 27px;
+  margin: -5px -7px;
+  color: white;
+  transform: scale(0.8);
+}
+.label-chk .ball {
+  background-color: var(--cor-menu);
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 22px;
+  height: 22px;
+  transform: translate(0px);
+  transition: transform 0.2s linear;
+}
+.cb-dark:checked + .label-chk .ball {
+  transform: translateX(24px);
+}
+.fa-sun {
+  color: #ffd900;
+}
+/* ---- Remove espaço da página ---- */
+.container-fluid {
+    padding: 0;
+    margin: 0;
+}
+/* ===- Barra de navegação -=== */
+.nav-bar {
+    background-image: linear-gradient(var(--cor-primaria), var(--cor-secundaria));
+    box-shadow: 0px 5px 5px var(--cor-sombra);
+    justify-content: space-between;
+    padding: 0 10px 0 0;
+    font-size: 13px;
+}
+/* ===- Menus -=== */
+.dropdown {
+    transition: background-color 0.3s ease;
+    border-radius: 4px;
+}
+.dropdown-menu {
+    min-width: none;
+    top: 100%;
+    margin-top: 2px;
+}
+.nav-link {
+    color: var(--cor-menu) !important;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: transform 0.5s ease;
+}
+.navbar {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar-collapse {
+  margin: -14px 0 0 -20px;
+}
+/* -- Icon seta menu */
+.toggle-menu {
+    font-size: 10px;
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+}  
+.dropdown:hover .toggle-menu {
+    transform: rotate(180deg);
+    transition: transform 0.5s ease;
+} 
+.custom-dropdown-width {
+    min-width: 100%;
+}
+.dropdown-menu-center {
+    left: 50% !important;
+    transform: translateX(-50%);
+}
+.nav-custom {
+    padding: 0.5rem;
+} 
+/* =-=- Menu whatsaap -=-= */
+.menu-zap {
+    border-radius: 50px;
+}
+/* ---- Cor de destaque do botão Whatsapp ---- */
+.dropzap:hover {
+    border-radius: 50px;
+    background: var(--cor-menu-hover-zap);
+    transition: background-color 0.5s ease;
+}  
+/* ---- Mostra menu suspenso ao passar o mouse ---- */
+.dropdown:hover .dropdown-menu {
+    display: block;
+    background-color: var(--cor-background-hover);
+    padding: 4px;
+    font-size: 13px;
+    border: 2px solid var(--cor-hover);
+    transition: background-color 0.5s ease;
+}
+/* ---- Cor dos menus ao passar o mouse ---- */
+.dropdown:hover {
+    background-color: var(--cor-hover);
+    transition: background-color 0.5s ease;
+}
+/* ---- Itens menu suspenso ---- */
+.dropdown-item {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    transition: background-color 0.5s ease;
+}
+.dropdown-item:hover {
+    background-color: var(--cor-hover-item);
+    border-radius: 4px;
+    transition: background-color 0.5s ease;
+}
+/* ==- Icons -== */
+.icon {
+    margin-left: 4px;
+}
+/* Fundo transparente ao passar o mouse */
+.icon:hover .dropdown {
+    background-color: transparent;
+}
+/* Cor do ícone ao passar o mouse */
+div .icon i {
+    font-size: 1rem;
+}
+.icons-custom:hover {
+  color: var(--cor-icone-globo-hover) !important;
+}
+.icons-custom span {
+  margin-left: 5px;
+  font-weight: 700;
+}
+.icons-user span {
+  margin-left: 5px;
+  font-weight: 700;
+}
+.custom-dropdown:hover .dropdown-menu {
+    background-color: black;
+    border: 2px solid rgb(126, 126, 126);
+}
+.custom-item:hover {
+    background-color: rgb(70, 70, 70);
+}
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: #fff;
+  margin: 8px;
+  transition: 0.3s;
+}
+.fa-right-from-bracket {
+  color: var(--cor-menu);
+  padding: 0 4px 2px;
+}
+.user button {
+  margin-left: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--cor-menu);
+  background: transparent;
+  border: none;
+}
+.hide {
+  display: none;
+}
+/* ---- Footer ---- */
+.footer {
+  display: flex;
+  align-items: center;
+  color: var(--cor-menu);
+  border-top: 2px solid rgb(88, 88, 88);
+  background-image: linear-gradient(rgba(23, 38, 60, 1), rgba(11, 18, 29, 1));
+}
+/* -== Área social ==- */
+.sec-social {
+  padding: 0.7rem;
+  text-align: center;
+  align-items: center;
+  border-right: 1px solid;
+  width: 17%;
+}
+/* Logo footer */
+.logo-footer {
+  padding: 12px;
+  cursor: pointer;
+}
+/* Título social */
+.title-social {
+  font-size: 12px;
+  font-weight: 500;
+  width: 100%;
+  margin: 7px 0px 20px;
+  border-bottom: 1px solid;
+  cursor: default;
+}
+/* Icons redes sociais */
+.social-media a {
+  color: white;
+  font-size: 2.4rem;
+  display: inline-block;
+  cursor: pointer;
+  margin: 0 0.5rem;
+}
+/* -====- Links -====- */
+/* Footer - links */
+.links-info {
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: 400;
+  padding: 0.8rem 0.4rem 0rem;
+  border-right: 1px solid;
+  width: 39%;
+}
+.bloco-group {
+  margin: 0.4rem;
+  font-size: 0.8rem;
+
+}
+.bloco {
+  padding: 0;
+}
+.bloco a {
+  padding: 0;
+}
+.bloco-header h1 {
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
+}
+/* Textos Blocos */
+.sec-links {
+  display: flex;
+  align-items: center;
+}
+.sec-links a {
+  color: var(--cor-menu);
+  text-decoration: none;
+}
+.bloco-group ul {
+  line-height: 1.7;
+  list-style-type: none;
+}
+.menu-footer {
+  display: flex;
+  padding: 0.7rem 0 0 0.7rem;
+}
+.bloco-group-container {
+  width: 100%;
+}
+/* ------- OK -----------*/
+/* --- Rodapé --- */
+footer {
+  color: #7a7a7a;
+  font-weight: 600;
+  background-color: black;
+  text-align: center;
+}
+/* Copyright */
+.copy {
+  display: block;
+  font-size: 14px;
+  padding: 6px;
+  text-align: center;
+}
+/* Responsividade */
+/* -===- Menu Nav Bar -===- */
+@media screen and (max-width: 1240px) {
+  .nav-list {
+      position: absolute;
+      top: 10vh;
+      right: 1px;
+      width: 80.4vw;
+      border-radius: 0 0 0px 8px;
+      background: #8a0000;
+      opacity: 0;
+      transition: transform 0.2s ease-in, opacity 0.2s ease-in;
+    }
+    .sec-social, .links-info {
+      width: 100%;
+    }
+    .nav-list li {
+      margin-left: 0;
+      opacity: 0;
+    }
+
+    .mobile-menu {
+      display: block;
+      cursor: pointer;
+    }
+
+    .nav-list.active {
+      position: absolute;
+      z-index: 2;
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    @keyframes navLinkFade {
+      from {
+        opacity: 0;
+        transform: translateX(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+    .transition-item {
+      animation: navLinkFade 0.5s ease forwards;
+      animation-delay: 0.3s;
+    }
+    .navbar-collapse {
+      margin: 0;
+    }
+/* ====- Footer -==== */
+    .footer {
+      display: block;
+    }
+    .sec-links {
+      display: block;
+    }
+    .links-info {
+      padding-left: 15rem;
+      border: 0;
+    }
+    .bl-mobile {
+      margin: 0 7rem 0 0;
+    }
+    .sec-social {
+      border: 0;
+      border-bottom: 2px solid gray;
+    }
+    .menu-footer {
+      padding-left: 4rem;
+      border-top: 1px solid gray;
+    }
+/* -=-=-=-=-=-=-=-=-=-=- */
+/* ---=- Menu Whatsaap -=--- */
+  .menu-zap {
+    border-radius: 8px;
+  }
+  /* ---- Cor de destaque do botão Whatsapp ---- */
+  .dropzap:hover {
+    border: 2px solid #008b00;
+    border-radius: 8px;
+    background: var(--cor-menu-hover-zap);
+    transition: background-color 0.5s ease;
+  }
+  .dropdown-menu-center {
+    transform: translateX(0%);    
+  }
+  .custom-item {
+    text-align: center;
+  }
+  .link-mobile {
+    margin-left: 1rem;
+  }
+  .cards {
+    display: none;
+  }
+}
+@media screen and (max-width: 650px) {
+  /* ====- Footer -==== */
+  .footer {
+    display: block;
+  }
+  .sec-links {
+    display: block;
+  }
+  .links-info {
+    display: block;
+    padding-left: 4rem;
+    border: 0;
+  }
+  .bl-mobile {
+    margin: 0;
+  }
+  .sec-social {
+    border: 0;
+    border-bottom: 2px solid gray;
+  }
+  .menu-footer {
+    display: block;
+    padding-left: 4rem;
+    border-top: 1px solid gray;
+  }
+  .copy {
+    margin: 0;
+  }
+}
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
+.dropdown-menu.show {
+  display: none;
+}
+.navbar-collapse {
+  padding: 7px 20px;
+}
+.navbar-nav {
+  margin-top: 10px;
+}

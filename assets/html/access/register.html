@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+        <link rel="icon" type="image/svg+xml" href="/assets/imgs/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <!-- CSS Fonts Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="description" content="Página de cadastro - Telecall/Unisuam">
+    <meta name="author" content="DJM developers®">
+        <link rel="stylesheet" href="/assets/css/style - register.css">
+        <!-- ==== CSS iziToast ==== -->
+        <link rel="stylesheet" href="/assets/plugins/css/iziToast.min.css">
+        <!-- ==== Bootstrap - Javascript ==== -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+            <!-- ==== JQuary / JQuary Mask ==== -->
+            <script src="/assets/plugins/js/jquery-3.7.0.min.js" type="text/javascript"></script>
+            <script src="/assets/plugins/js/jquery.mask.min.js" type="text/javascript"></script>
+            <!-- ==== Script iziToast "Notify" ==== -->
+            <script src="/assets/plugins/js/iziToast.min.js" type="text/javascript"></script>
+            <!-- === Script de validação === -->
+            <script src="/assets/js/register-validation.js" defer></script>
+    <title>Projeto Telecall - Cadastro</title>
+  </head>
+<body>
+    <div class="container">
+    <!-- ---- Logo ---- -->
+        <div class="logo"><img width="200" src="/assets/imgs/telecall-logo-bicolor.svg" alt="Logo-Telecall"></div>
+        <!-- ---- Formulário ---- -->
+            <form class="form" id="form" method="post" action="#">
+                <!-- - Título - -->
+                    <header class="form-header"><h1>Cadastro de usuário</h1></header>
+                    <!-- ---- Entrada de Dados ---- -->
+                        <div class="form-inputs">
+                        <!-- - Subtítulo - Dados pessoais - -->
+                            <div class="subtitle"><h3>Dados pessoais</h3></div>
+                            <!-- -- Nome Completo -- --> 
+                                <div class="input-box">
+                                    <label id="labelName" for="name">Nome Completo:</label>
+                                        <input 
+                                            id="nome" 
+                                            name="nome"
+                                            type="text" 
+                                            class="form-input"
+                                            title="Digite seu nome completo." 
+                                            placeholder="Dgite seu nome e sobrenome" required
+                                            data-required
+                                            autocomplete="off"
+                                            data-min-length="15"
+                                            data-max-length="60"
+                                            data-only-letters
+                                            minlength="15"
+                                            maxlength="60"
+                                            pattern="[a-zA-Z\s]+"
+                                        >
+                                </div>
+                            <!-- -- Data de nascimento -- -->
+                                <div class="input-box">
+                                    <label for="date">Data de Nascimento:</label>
+                                        <input required data-required
+                                            id="date"
+                                            name="data"
+                                            type="date"
+                                            maxlength="8"
+                                            class="form-input-dst"                                            
+                                            title="Informe sua data de nascimento."
+                                        >
+                                </div>
+                            <!-- -- Gênero -- -->
+                                <div class="gen-box input-box">
+                                <!-- Gen-Title -->
+                                    <h3>Gênero</h3>
+                                    <!-- Gen-Grupo -->
+                                        <div class="gen-group">
+                                        <!-- - Masculino - -->
+                                            <div class="gen-input">
+                                                <label for="masculino">Masculino</label>
+                                                    <input 
+                                                        id="masculino" 
+                                                        name="gen" 
+                                                        type="radio" 
+                                                        value="masculino"
+                                                        data-gender-validate
+                                                        required
+                                                    >
+                                            </div>
+                                        <!-- - Feminino - -->
+                                            <div class="gen-input">
+                                                <label for="feminino">Feminino</label>
+                                                    <input 
+                                                        id="feminino" 
+                                                        name="gen" 
+                                                        type="radio" 
+                                                        value="feminino"
+                                                        data-gender-validate
+                                                        required
+                                                    >
+                                            </div>
+                                        </div>
+                                </div>
+                            <!-- -- Nome da Mãe -- -->
+                                <div class="input-box">
+                                    <label for="name-mae">Nome Materno:</label>
+                                        <input 
+                                            id="name-mae"
+                                            name="name-mae" 
+                                            type="text" 
+                                            class="form-input"
+                                            title="Digite o nome materno."
+                                            placeholder="Nome materno" required
+                                            data-required
+                                            autocomplete="off"
+                                            data-min-length="15"
+                                            data-max-length="60"
+                                            data-only-letters
+                                            minlength="15"
+                                            maxlength="60"
+                                            pattern="[a-zA-Z\s]+"
+                                        >
+                                </div>
+                            <!-- -- CPF -- -->
+                                <div class="input-box">
+                                    <label for="cpf">CPF:</label>
+                                        <input 
+                                            id="cpf"
+                                            name="cpf" 
+                                            type="text" 
+                                            class="form-input"
+                                            title="Digite seu CPF."
+                                            data-cpf-length="14"
+                                            minlength="14"
+                                            placeholder="000.000.000-00" required
+                                            data-required
+                                            autocomplete="none"
+                                        >
+                                </div>
+                            <!-- --- Celular --- -->
+                                <div class="input-box">
+                                    <label for="cel">Celular:</label>
+                                        <input 
+                                            id="cel"
+                                            name="cel" 
+                                            type="tel" 
+                                            class="form-input"
+                                            title="Digite o número de celular"
+                                            placeholder="(+55) xx-xxxxx-xxxx" required
+                                            autocomplete="off"
+                                            minlength="18"
+                                            data-required
+                                        >
+                                </div>
+                            <!-- -- Telefone Fixo -- -->
+                                <div class="input-box">
+                                    <label for="tel">Telefone Fixo:</label>
+                                        <input 
+                                            id="tel"
+                                            name="tel" 
+                                            type="tel" 
+                                            class="form-input"
+                                            title="Digite o número de telefone." 
+                                            placeholder="(+55) xx-xxxx-xxxx" required
+                                            autocomplete="off"
+                                            data-tel-length="17"
+                                            minlength="17"
+                                            data-required
+                                        >
+                                </div>
+                            <!-- -- Email -- -->
+                                <div class="input-box">
+                                    <label for="email">E-mail:</label>
+                                        <input 
+                                            id="email"
+                                            name="email" 
+                                            type="email" 
+                                            class="form-input"
+                                            title="Digite seu e-mail" 
+                                            placeholder="Digite seu e-mail" required
+                                            data-required
+                                            data-email-validate
+                                            autocomplete="off"
+                                            maxlength="50"
+                                        >
+                                </div>
+                        <!-- - Subtítulo - Dados de Endereço - -->
+                            <div class="subtitle"><h3>Endereço</h3></div>
+                            <!-- -- CEP -- -->
+                                <div class="input-box">
+                                    <label for="cep">CEP:</label>
+                                        <input 
+                                            id="cep" 
+                                            name="cep" 
+                                            type="text" 
+                                            class="form-input"
+                                            title="Digite seu CEP."
+                                            placeholder="00000-000" required
+                                            data-required
+                                            data-cep-length="9"
+                                            minlength="9"
+                                            pattern="[0-9]{5}-[0-9]{3}"
+                                        >
+                                </div>
+                            <!-- -- Endereço completo -- -->
+                                <div class="input-box">
+                                    <label for="end">Endereço:</label>
+                                        <input 
+                                            id="end"
+                                            name="end" 
+                                            type="text" 
+                                            class="form-input"
+                                            title="Digite seu endereço complento."
+                                            placeholder="Rua, Avenida, etc." required
+                                            data-required
+                                            maxlength="50"
+                                        >
+                                </div>
+                            <!-- -- Número -- -->
+                                <div class="input-box">
+                                    <label for="num-end">Número:</label>
+                                        <input 
+                                            id="num-end"
+                                            name="num-end" 
+                                            type="number" 
+                                            class="form-input"
+                                            title="Número da rua, qrd, etc..."
+                                            placeholder="Número de onde mora" required
+                                            data-required
+                                        >
+                                </div>
+                            <!-- -- Estado -- -->
+                                <div class="input-box select-box">
+                                    <label for="estados">Estado:</label>
+                                        <select class="form-input-dst" id="estado" data-state-validate required>
+                                            <option value="">Selecione o seu estado</option>
+                                            <option value="AC">Acre</option>
+                                            <option value="AL">Alagoas</option>
+                                            <option value="AP">Amapá</option>
+                                            <option value="AM">Amazonas</option>
+                                            <option value="BA">Bahia</option>
+                                            <option value="CE">Ceará</option>
+                                            <option value="DF">Distrito Federal</option>
+                                            <option value="ES">Espírito Santo</option>
+                                            <option value="GO">Goiás</option>
+                                            <option value="MA">Maranhão</option>
+                                            <option value="MT">Mato Grosso</option>
+                                            <option value="MS">Mato Grosso do Sul</option>
+                                            <option value="MG">Minas Gerais</option>
+                                            <option value="PA">Pará</option>
+                                            <option value="PB">Paraíba</option>
+                                            <option value="PR">Paraná</option>
+                                            <option value="PE">Pernambuco</option>
+                                            <option value="PI">Piauí</option>
+                                            <option value="RJ">Rio de Janeiro</option>
+                                            <option value="RN">Rio Grande do Norte</option>
+                                            <option value="RS">Rio Grande do Sul</option>
+                                            <option value="RO">Rondônia</option>
+                                            <option value="RR">Roraima</option>
+                                            <option value="SC">Santa Catarina</option>
+                                            <option value="SP">São Paulo</option>
+                                            <option value="SE">Sergipe</option>
+                                            <option value="TO">Tocantins</option>
+                                        </select>
+                                </div>
+                            <!-- -- Cidade -- -->
+                                <div class="input-box">
+                                    <label for="cid">Cidade:</label>
+                                        <input 
+                                            id="cid"
+                                            name="cid" 
+                                            type="text" 
+                                            class="form-input"
+                                            title="Digite a cidade onde mora."
+                                            placeholder="Digite sua cidade" required
+                                            data-required
+                                        >
+                                </div>
+                            <!-- -- Bairro -- -->
+                                <div class="input-box">
+                                    <label for="bairro">Bairro:</label>
+                                        <input 
+                                            id="bairro"
+                                            name="bairro" 
+                                            type="text" 
+                                            class="form-input"
+                                            title="Digite o bairro onde mora."
+                                            placeholder="Digite seu bairro" required
+                                            data-required
+                                        >
+                                </div>
+                            <!-- -- Complemento -- -->
+                                <div class="input-box box">
+                                    <label for="comp">Complemento:</label>
+                                        <textarea required
+                                            id="comp"
+                                            name="comp" 
+                                            class="form-input-dst"
+                                            placeholder="(Opicional)"
+                                            rows="1"></textarea>
+                                </div>
+                        <!-- - Subtítulo - Cadastro de login e senha - -->
+                            <div class="subtitle"><h3>Login e senha</h3></div>
+                            <!-- -- Login -- -->
+                                <div class="input-box">
+                                    <label for="login">Login:</label>
+                                        <input 
+                                            id="login"
+                                            name="login" 
+                                            type="text" 
+                                            class="form-input"
+                                            title="O login deve conter 6 caracteres."
+                                            placeholder="Crie seu login" required
+                                            data-required
+                                            data-login-length="6"
+                                            data-only-letters
+                                            minlength="6"
+                                            maxlength="6"
+                                        >
+                                </div>
+                            <!-- -- Senha -- -->
+                                <div class="input-box">
+                                    <label for="pass">Senha:</label>
+                                        <input 
+                                            id="pass"
+                                            name="pass" 
+                                            type="password" 
+                                            class="form-input"
+                                            title="A senha deve conter 8 caracteres."
+                                            placeholder="Crie sua senha" required
+                                            data-required
+                                            data-only-letters
+                                            minlength="8"
+                                            maxlength="8"
+                                            data-pass-valid
+                                        ><i class="fa-solid fa-eye" id="eye-icon"></i>
+                                </div>
+                            <!-- -- Confirma senha -- -->
+                                <div class="input-box">
+                                    <label for="conf-pass">Confirmar senha:</label>
+                                        <input  
+                                            id="conf-pass"
+                                            name="conf-pass" 
+                                            type="password" 
+                                            class="form-input"
+                                            title="Repita a sua senha."
+                                            placeholder="Confirme sua senha" required
+                                            data-required
+                                            data-only-letters
+                                            minlength="8"
+                                            maxlength="8"
+                                            data-equal="pass"
+                                        ><i class="fa-solid fa-eye" id="eye-icon-confirm"></i>
+                                </div>
+                        </div>
+                        <!-- ---- Check Termos e Condições ---- -->
+                            <div class="ck-term">
+                                <input required type="checkbox" name="ck-term" id="TermsAccepted" data-terms-accepted>
+                                    <p>Aceito os <a href="#">Termos e condições</a> e autorizo o uso de meus dados de acordo com a <a href="#">Declaração de privacidade</a>.</p>
+                            </div>
+                        <!-- ---- Botôes - Limpar/Enviar ---- -->
+                            <div class="btn-group">
+                                <!-- Botão Limpar -->
+                                    <div class="btn btn-reset"><button type="reset" class="btn-clear">Limpar</button></div>
+                                    <!-- Botão Enviar -->
+                                        <div id="btnSubmit" class="btn btn-submit"><button type="submit" onclick='enviar()'>Enviar</button></div>
+                            </div><br>
+                                <!-- - Voltar a página de Login - -->
+                                    <div class="btn-gruop btn btn-signup"><p>Já possui uma conta? <a href="./login.html">Fazer login</a>.</p></div>
+            </form>
+    </div>
+        <!-- --- Parágrafo de erro do formulário --- -->
+        <div class="error"><p class="error-validation template"></p></div>
+            <div class="error-box"><p class="error-active error-checkbox"></p></div>
+                <div class="error-radio"><p class="error-selc error-gen"></p></div>
+</body>
+</html>

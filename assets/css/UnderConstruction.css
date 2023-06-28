@@ -1,0 +1,104 @@
+:root {
+    /* Cores */
+    --red-default: #ca1c2a;
+    --red-default-hover: #f00a2c;
+    --blue-default: #0077c7;
+    --blue-default-hover: #008fee;
+    --cinza: #979797;
+    --cor-cards: #ffffff;
+    --cor-texts: #000000;
+    --cor-bg: #ffffff;
+    /* Gradiente de Cores */
+    --gradiente-vermelho: linear-gradient(340deg, #ED0707 0%, #030513 100%);
+    /* img color */
+    --filter: invert(0%);
+}
+.dark-mode:root {
+    /* Cores */
+    --cinza: #db3d3dbe;
+    --cor-cards: #910000;
+    --cor-texts: #ffffff;
+    --cor-bg: #202124;
+    /* Gradiente de Cores */
+    --gradiente-vermelho: linear-gradient(340deg, #ED0707 0%, #030513 100%);
+    /* img color */
+    --filter: invert(100%);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+}
+body {
+    display: flex;
+    width: 100%;
+    min-height: 50vh;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor-texts) !important;
+    background-color: var(--cor-bg) !important;
+}
+main {
+    margin: 0rem;
+}
+/* ====- Toda Página -==== */
+.elementor-box {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 1.9rem;
+}
+
+/* =-=- Conteúdo da seção -=-= */
+.elementor-container {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+/* -- Imagems (Home / API) -- */
+.elementor-image {
+    width: auto;
+    padding: 4.55rem 0;
+}
+/* ==== Seção 2 ==== */
+.elementor-head-title b {
+    font-size: 3rem;
+    color: var(--red-default);
+}
+.elementor-text {
+    display: block;
+    text-align: center;
+    padding: 14rem 0;
+}
+
+/* ==-- Responsividade --== */
+@media screen and (max-width: 768px) {
+    .elementor-container {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+    }
+        .elementor-section {
+            padding: 0 0.625rem 1.25rem 0;
+        }
+            .elementor-image img {
+                width: 100%;
+            }
+                .elementor-image{
+                    padding: 2rem 0;
+                }
+                .elementor-head-title b {
+                    font-size: 1.8rem;
+                }
+                    .elementor-text {
+                        padding: 1rem 0 5rem;
+                    }
+
+}
+  
