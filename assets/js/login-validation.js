@@ -148,76 +148,6 @@ btnSubmit.addEventListener('click', function (event) {
       validator.validate(form);
 });
 
-// // Validação de login
-// function entrar() {
-//   let user = document.querySelector('#login');
-//   let pass = document.querySelector('#pass');
-
-//   let listaUser = [];
-
-//   let userValid = {
-//     nome: '',
-//     login: '',
-//     senha: ''
-//   };
-
-//   listaUser = JSON.parse(localStorage.getItem('listaUser'));
-
-//   listaUser.forEach((item) => {
-//     if (user.value == item.login && pass.value == item.senha) {
-//       userValid = {
-//         nome: item.nome,
-//         login: item.login,
-//         senha: item.senha
-//       };
-//     }
-//   });
-
-//   // Verifica se os campos de login e senha estão vazios
-//   if (user.value === '' || pass.value === '') {
-//     iziToast.warning({
-//       title: 'Por favor, preencha todos os campos!',
-//       message: '',
-//       position: 'bottomCenter',
-//       timeout: 5000,
-//       // theme: 'dark',
-//       color: '#fff',
-//       backgroundColor: '#f1c40f',
-//     });
-//     return; // Retorna sem executar o restante do código
-//   }
-
-//   if (user.value == userValid.login && pass.value == userValid.senha) {
-//     iziToast.success({
-//       title: 'Seja Bem-Vindo(a),',
-//       message: `${userValid.nome}!`,
-//       position: 'bottomCenter',
-//       timeout: 5000,
-//       theme: 'dark',
-//       color: '#fff',
-//       backgroundColor: '#43b633',
-//     });
-//     setTimeout(() => {
-//       window.location.href = '/index.html';
-//     }, 5000);
-
-//     let token = Math.random().toString(16).substring(2);
-//     console.log(token);
-//   } else {
-//     iziToast.error({
-//       title: 'Usuário não existe!',
-//       message: '',
-//       position: 'bottomCenter',
-//       timeout: 5000,
-//       theme: 'dark',
-//       color: '#fff',
-//       backgroundColor: '#e74c3c',
-//     });
-//     login.focus();
-//     pass.value = '';
-//   }
-// }
-
 // Validação de login
 function entrar() {
   let user = document.querySelector('#login');
@@ -268,7 +198,7 @@ function entrar() {
     });
 
     setTimeout(() => {
-      window.location.href = '/index.html';
+      window.location.href = '../../../index.html';
     }, 5000);
     // Cria um Token para o usuário
     let token = Math.random().toString(16).substring(2);

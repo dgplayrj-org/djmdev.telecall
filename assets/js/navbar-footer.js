@@ -163,7 +163,7 @@ function verificarCaptcha() {
 function sair() {
   localStorage.removeItem('token');
   localStorage.removeItem('userLogado');
-  window.location.href = '/assets/html/access/login.html';
+  window.location.href = '../../../assets/html/access/login.html';
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -180,7 +180,7 @@ document.addEventListener('DOMContentLoaded', () => {
   } else {
     username.innerHTML = 'Usuário';
     logoutBtn.classList.add('hide');
-    userLink.setAttribute('href', '/assets/html/access/login.html');
+    userLink.setAttribute('href', '../../../assets/html/access/login.html');
     userLink.style.cursor = 'pointer';
   }
 });

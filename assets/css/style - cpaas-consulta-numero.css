@@ -152,6 +152,42 @@ main {
     padding-bottom: 0.1875rem;
 }
 /* ==-- Responsividade --== */
+@media screen and (max-width: 1080px) {
+    .elementor-container {
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+    }
+        .elementor-section {
+            padding: 0 0.625rem 1.25rem 0;
+        }
+            .elementor-box {
+                padding: 0 1rem 0 1.9rem;
+            }
+                .elementor-column {
+                    padding: 0;
+                }
+                    .elementor-button {
+                        padding: 1rem 2rem;
+                        font-size: 1.3rem;
+                        text-align: center;
+                        line-height: 1;
+                    }
+                        .fa {
+                            margin-left: 0.875rem;
+                            font-size: 1rem;
+                        }
+                            .elementor-image {
+                                margin: 0;
+                                width: 100%;
+                            }
+                                .elementor-image img {
+                                    width: 100%;
+                                }
+                                    .elementor-text {
+                                        margin: 2rem 1rem 6rem;
+                                    }
+}
 @media screen and (max-width: 768px) {
     .elementor-container {
         display: block;

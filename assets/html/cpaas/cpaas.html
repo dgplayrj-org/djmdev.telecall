@@ -2,7 +2,7 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8">
-        <link rel="icon" type="image/svg+xml" href="/assets/imgs/favicon.svg">
+        <link rel="icon" type="image/svg+xml" href="../../../assets/imgs/favicon.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,8 +14,9 @@
         <!-- Bootstrap - CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
         <!-- CSS Local -->
-        <link rel="stylesheet" href="/assets/css/style - navbar-footer.css">
-        <link rel="stylesheet" href="/assets/css/style - cpaas.css">
+        <link rel="stylesheet" href="../../../assets/css/style - navbar-footer.css">
+        <link rel="stylesheet" href="../../../assets/css/style - cpaas.css">
+        <script src="../../../assets/js/navbar-footer.js" defer></script>
             <!-- Bootstrap - Javascript -->
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
             <!-- Jquery - Javascript -->
@@ -26,11 +27,11 @@
     <div class="container-fluid">
         <header>
         <!-- Barra de navegação -->
-            <nav class="navbar justify-content-end navbar-expand-lg nav-bar navbar-light bg-light">
+            <nav class="navbar navbar-expand-xl justify-content-end nav-bar navbar-light bg-light">
                 <!-- Logo Navbar -->
                 <div class="col logo" id="internetDropdown">
-                    <a class="navbar-brand a-logo" href="/index.html">
-                        <img width="200" src="/assets/imgs/navbar-telecall.png" alt="Telecall - Página Inicial" data-toggle="tooltip" data-bs-placement="bottom" title="Telecall - Página Inicial">
+                    <a class="navbar-brand a-logo" href="../../../index.html">
+                        <img width="200" src="../../../assets/imgs/navbar-telecall.png" alt="Telecall - Página Inicial" data-toggle="tooltip" data-bs-placement="bottom" title="Telecall - Página Inicial">
                     </a>
                 </div>
                 <!-- Botão de colapso para dispositivos móveis -->
@@ -43,11 +44,11 @@
                 <div class="navbar-collapse nav-list" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
                     <!-- L1 -->
-                        <li class="nav-item dropdown" id="internetDropdown"><a class="nav-link link-mobile" href="/assets/html/UnderConstruction.html" onclick="toggleSubmenu(event)">Internet<i class="toggle-menu fa-solid fa-caret-down"></i></a>
+                        <li class="nav-item dropdown" id="internetDropdown"><a class="nav-link link-mobile" href="../../../assets/html/UnderConstruction.html" onclick="toggleSubmenu(event)">Internet<i class="toggle-menu fa-solid fa-caret-down"></i></a>
                             <ul class="dropdown-menu custom-dropdown-width">
-                                <li class="dropdown-item"><a class="nav-link nav-custom" href="/assets/html/UnderConstruction.html">Internet Dedicada</a></li>
-                                <li class="dropdown-item"><a class="nav-link nav-custom" href="/assets/html/UnderConstruction.html">Banda Larga</a></li>
-                                <li class="dropdown-item"><a class="nav-link nav-custom" href="/assets/html/UnderConstruction.html">Wi-Fi</a></li>
+                                <li class="dropdown-item"><a class="nav-link nav-custom" href="../../../assets/html/UnderConstruction.html">Internet Dedicada</a></li>
+                                <li class="dropdown-item"><a class="nav-link nav-custom" href="../../../assets/html/UnderConstruction.html">Banda Larga</a></li>
+                                <li class="dropdown-item"><a class="nav-link nav-custom" href="../../../assets/html/UnderConstruction.html">Wi-Fi</a></li>
                             </ul>
                         </li>
                     <!-- L2 -->
@@ -61,45 +62,45 @@
                             </ul>
                         </li>
                     <!-- L3 -->    
-                        <li class="nav-item dropdown" id="internetDropdown"><a class="nav-link link-mobile" href="/assets/html/UnderConstruction.html" onclick="toggleSubmenu(event)">Telefonia<i class="toggle-menu fa-solid fa-caret-down"></i></a>
+                        <li class="nav-item dropdown" id="internetDropdown"><a class="nav-link link-mobile" href="../../../assets/html/UnderConstruction.html" onclick="toggleSubmenu(event)">Telefonia<i class="toggle-menu fa-solid fa-caret-down"></i></a>
                             <ul class="dropdown-menu custom-dropdown-width">
-                                <li class="dropdown-item"><a class="nav-link nav-custom" href="/assets/html/UnderConstruction.html">PABX IP Virtual</a></li>
-                                <li class="dropdown-item"><a class="nav-link nav-custom" href="/assets/html/UnderConstruction.html">E1 / SIP TRUNK</a></li>
-                                <li class="dropdown-item"><a class="nav-link nav-custom" href="/assets/html/UnderConstruction.html">Números 0800 e 40XX</a></li>
+                                <li class="dropdown-item"><a class="nav-link nav-custom" href="../../../assets/html/UnderConstruction.html">PABX IP Virtual</a></li>
+                                <li class="dropdown-item"><a class="nav-link nav-custom" href="../../../assets/html/UnderConstruction.html">E1 / SIP TRUNK</a></li>
+                                <li class="dropdown-item"><a class="nav-link nav-custom" href="../../../assets/html/UnderConstruction.html">Números 0800 e 40XX</a></li>
                             </ul>                            
                         </li>
                     <!-- L4 -->
-                        <li class="nav-item dropdown" id="internetDropdown"><a class="nav-link link-mobile" href="/assets/html/UnderConstruction.html" onclick="toggleSubmenu(event)">Rede e infraestrutura<i class="toggle-menu fa-solid fa-caret-down"></i></a>
+                        <li class="nav-item dropdown" id="internetDropdown"><a class="nav-link link-mobile" href="../../../assets/html/UnderConstruction.html" onclick="toggleSubmenu(event)">Rede e infraestrutura<i class="toggle-menu fa-solid fa-caret-down"></i></a>
                             <ul class="dropdown-menu custom-dropdown-width">
-                                <li class="dropdown-item"><a class="nav-link nav-custom" href="/assets/html/UnderConstruction.html">Ponto-a-Ponto</a></li>
-                                <li class="dropdown-item"><a class="nav-link nav-custom" href="/assets/html/UnderConstruction.html">MPLS</a></li>
-                                <li class="dropdown-item"><a class="nav-link nav-custom" href="/assets/html/UnderConstruction.html">Fibra Apagada e Dutos</a></li>
-                                <li class="dropdown-item"><a class="nav-link nav-custom" href="/assets/html/UnderConstruction.html">Co-locations</a></li>
+                                <li class="dropdown-item"><a class="nav-link nav-custom" href="../../../assets/html/UnderConstruction.html">Ponto-a-Ponto</a></li>
+                                <li class="dropdown-item"><a class="nav-link nav-custom" href="../../../assets/html/UnderConstruction.html">MPLS</a></li>
+                                <li class="dropdown-item"><a class="nav-link nav-custom" href="../../../assets/html/UnderConstruction.html">Fibra Apagada e Dutos</a></li>
+                                <li class="dropdown-item"><a class="nav-link nav-custom" href="../../../assets/html/UnderConstruction.html">Co-locations</a></li>
                             </ul>
                         </li>
                     <!-- L5 -->
-                        <li class="nav-item dropdown" id="internetDropdown"><a class="nav-link link-mobile" href="/assets/html/UnderConstruction.html" onclick="toggleSubmenu(event)">Mobilidade<i class="toggle-menu fa-solid fa-caret-down"></i></a>
+                        <li class="nav-item dropdown" id="internetDropdown"><a class="nav-link link-mobile" href="../../../assets/html/UnderConstruction.html" onclick="toggleSubmenu(event)">Mobilidade<i class="toggle-menu fa-solid fa-caret-down"></i></a>
                             <ul class="dropdown-menu custom-dropdown-width">
-                                <li class="dropdown-item"><a class="nav-link nav-custom" href="/assets/html/UnderConstruction.html">Celular Empresarial</a></li>
-                                <li class="dropdown-item"><a class="nav-link nav-custom" href="/assets/html/UnderConstruction.html">MVNA/E</a></li>
+                                <li class="dropdown-item"><a class="nav-link nav-custom" href="../../../assets/html/UnderConstruction.html">Celular Empresarial</a></li>
+                                <li class="dropdown-item"><a class="nav-link nav-custom" href="../../../assets/html/UnderConstruction.html">MVNA/E</a></li>
                             </ul>
                         </li>
                     <!-- L6 -->
-                        <li class="nav-item dropdown" id="internetDropdown"><a class="nav-link link-mobile" href="/assets/html/UnderConstruction.html" onclick="toggleSubmenu(event)">Eventos</a></li>
+                        <li class="nav-item dropdown" id="internetDropdown"><a class="nav-link link-mobile" href="../../../assets/html/UnderConstruction.html" onclick="toggleSubmenu(event)">Eventos</a></li>
                     <!-- L7 -->
-                        <li class="nav-item dropdown" id="internetDropdown"><a class="nav-link link-mobile" href="/assets/html/UnderConstruction.html" onclick="toggleSubmenu(event)">Outras soluções<i class="toggle-menu fa-solid fa-caret-down"></i></a>
+                        <li class="nav-item dropdown" id="internetDropdown"><a class="nav-link link-mobile" href="../../../assets/html/UnderConstruction.html" onclick="toggleSubmenu(event)">Outras soluções<i class="toggle-menu fa-solid fa-caret-down"></i></a>
                             <ul class="dropdown-menu custom-dropdown-width">
-                                <li class="dropdown-item"><a class="nav-link nav-custom" href="/assets/html/UnderConstruction.html">Outsourcing de Hardware</a></li>
+                                <li class="dropdown-item"><a class="nav-link nav-custom" href="../../../assets/html/UnderConstruction.html">Outsourcing de Hardware</a></li>
                             </ul>
                         </li>
                     <!-- L8 -->
-                        <li class="nav-item dropdown" id="internetDropdown"><a class="nav-link link-mobile" href="/assets/html/UnderConstruction.html" onclick="toggleSubmenu(event)">Mais informações<i class="toggle-menu fa-solid fa-caret-down"></i></a>
+                        <li class="nav-item dropdown" id="internetDropdown"><a class="nav-link link-mobile" href="../../../assets/html/UnderConstruction.html" onclick="toggleSubmenu(event)">Mais informações<i class="toggle-menu fa-solid fa-caret-down"></i></a>
                             <ul class="dropdown-menu custom-dropdown-width">
-                                <li class="dropdown-item"><a class="nav-link nav-custom" href="/assets/html/UnderConstruction.html">Empresas</a></li>
-                                <li class="dropdown-item"><a class="nav-link nav-custom" href="/assets/html/UnderConstruction.html">Wholesale</a></li>
-                                <li class="dropdown-item"><a class="nav-link nav-custom" href="/assets/html/UnderConstruction.html">Institucional</a></li>
-                                <li class="dropdown-item"><a class="nav-link nav-custom" href="/assets/html/UnderConstruction.html">Carreiras</a></li>
-                                <li class="dropdown-item"><a class="nav-link nav-custom" href="/assets/html/UnderConstruction.html">FAQ</a></li>
+                                <li class="dropdown-item"><a class="nav-link nav-custom" href="../../../assets/html/UnderConstruction.html">Empresas</a></li>
+                                <li class="dropdown-item"><a class="nav-link nav-custom" href="../../../assets/html/UnderConstruction.html">Wholesale</a></li>
+                                <li class="dropdown-item"><a class="nav-link nav-custom" href="../../../assets/html/UnderConstruction.html">Institucional</a></li>
+                                <li class="dropdown-item"><a class="nav-link nav-custom" href="../../../assets/html/UnderConstruction.html">Carreiras</a></li>
+                                <li class="dropdown-item"><a class="nav-link nav-custom" href="../../../assets/html/UnderConstruction.html">FAQ</a></li>
                             </ul>
                         </li>
                     <!-- WhatsApp -->
@@ -174,7 +175,6 @@
                 </div>
             </nav>
         </header>
-        <script src="/assets/js/navbar-footer.js"></script>
         <!-- ---- Conteúdo da Página ---- -->
         <main class="dark-mode!">
             <div class="elementor-box">
@@ -183,25 +183,25 @@
                 <div class="elementor-container element">
                   <div class="elementor-box elementor-column">
                     <!-- Logo Modavo -->
-                    <div class="elementor-logo"><img width="355" src="/assets/imgs/cpaas/logo-modavo-red.svg" alt="Logo Modavo"></div>
+                    <div class="elementor-logo"><img width="355" src="../../../assets/imgs/cpaas/logo-modavo-red.svg" alt="Logo Modavo"></div>
                     <!-- Título -->
                     <div class="elementor-title"><strong>CPaaS Platform</strong></div><span class="divider-separator divider-separator-head"></span>
                     <!-- Subtítulo -->
                     <div class="elementor-subtitle"><b>Flexível.<br>Autêntico.<br>Seguro.</b></div>
                     <!-- Botão de cadastro -->
-                    <div class="elementor-button btn-cad"><a href="/assets/html/access/register.html"><span>Cadastre-se e Teste Gratuitamente<i aria-hidden="true" class="fa fa-angle-right"></i></span></a></div>
+                    <div class="elementor-button btn-cad"><a href="../../../assets/html/access/register.html"><span>Cadastre-se e Teste Gratuitamente<i aria-hidden="true" class="fa fa-angle-right"></i></span></a></div>
                     <!-- Botão fale com... -->
-                    <div class="elementor-button btn-spk"><a href="/assets/html/cpaas/cpaas-contato.html"><span>Fale com um Especialista<i aria-hidden="true" class="fa fa-angle-right"></i></span></a></div>
+                    <div class="elementor-button btn-spk"><a href="../../../assets/html/cpaas/cpaas-contato.html"><span>Fale com um Especialista<i aria-hidden="true" class="fa fa-angle-right"></i></span></a></div>
                   </div>            
                     <!-- IMG -->
-                    <div class="elementor-image"><img width="800" src="/assets/imgs/cpaas/telecall-cpaas-home-red.png" alt="CPaas Home"></div>        
+                    <div class="elementor-image"><img width="800" src="../../../assets/imgs/cpaas/telecall-cpaas-home-red.png" alt="CPaas Home"></div>        
                 </div>
               </section>
               <!-- Elemento 2 -->
               <section class="elementor-section">
                 <div class="elementor-container">
                   <!-- IMG -->
-                  <div class="elementor-image"><img width="450" src="/assets/imgs/cpaas/API-CpaaS-red.png" alt="API CPaaS"></div>
+                  <div class="elementor-image"><img width="450" src="../../../assets/imgs/cpaas/API-CpaaS-red.png" alt="API CPaaS"></div>
                     <div class="elementor-text">
                       <!-- Título e texto 1 -->
                       <div class="elementor-content">
@@ -245,7 +245,7 @@
                     <div class="card-box">
                       <div class="card">
                         <!-- Icon -->
-                        <div class="icon"><a href="./cpaas-2fa.html"><img src="/assets/imgs/cpaas/senha.png" alt="Senha - 2FA"></a></div>
+                        <div class="icon"><a href="./cpaas-2fa.html"><img src="../../../assets/imgs/cpaas/senha.png" alt="Senha - 2FA"></a></div>
                           <!-- Título Card -->
                           <div class="card-title"><a href="./cpaas-2fa.html">2FA</a></div>
                       </div>
@@ -256,7 +256,7 @@
                     <div class="card-box">
                       <div class="card">
                         <!-- Icon -->
-                        <div class="icon"><a href="./cpaas-conversor.html"><img src="/assets/imgs/cpaas/Conversor.png" alt="Conversor"></a></div>
+                        <div class="icon"><a href="./cpaas-conversor.html"><img src="../../../assets/imgs/cpaas/Conversor.png" alt="Conversor"></a></div>
                           <!-- Título Card -->
                           <div class="card-title"><a href="./cpaas-conversor.html">Conversor</a></div>
                       </div>
@@ -267,7 +267,7 @@
                     <div class="card-box">
                       <div class="card">
                         <!-- Icon -->
-                        <div class="icon"><a href="./cpaas-numero-mascara.html"><img src="/assets/imgs/cpaas/mascara-de-numero.png" alt="Número Máscara"></a></div>
+                        <div class="icon"><a href="./cpaas-numero-mascara.html"><img src="../../../assets/imgs/cpaas/mascara-de-numero.png" alt="Número Máscara"></a></div>
                           <!-- Título Card -->
                           <div class="card-title"><a href="./cpaas-numero-mascara.html">Número Máscara</a></div>
                       </div>
@@ -278,7 +278,7 @@
                     <div class="card-box">
                       <div class="card">
                         <!-- Icon -->
-                        <div class="icon"><a href="./cpaas-consulta-numero.html"><img src="/assets/imgs/cpaas/icon-celular.png" alt="Consultar Número"></a></div>
+                        <div class="icon"><a href="./cpaas-consulta-numero.html"><img src="../../../assets/imgs/cpaas/icon-celular.png" alt="Consultar Número"></a></div>
                           <!-- Título Card -->
                           <div class="card-title"><a href="./cpaas-consulta-numero.html">Consultar</a></div>
                       </div>
@@ -289,9 +289,9 @@
                     <div class="card-box">
                       <div class="card">
                         <!-- Icon -->
-                        <div class="icon"><a href="./cpaas-campanha.html"><img src="/assets/imgs/cpaas/email.png" alt="Gerenciamento de Campanha"></a></div>
+                        <div class="icon"><a href="./cpaas-campanha.html"><img src="../../../assets/imgs/cpaas/email.png" alt="Gerenciamento de Campanha"></a></div>
                           <!-- Título Card -->
-                          <div class="card-title"><a href="/cpaas-campanha.html">Gerenciamento de Campanha</a></div>
+                          <div class="card-title"><a href="./cpaas-campanha.html">Gerenciamento de Campanha</a></div>
                       </div>
                     </div>            
                   </div>
@@ -383,8 +383,8 @@
               <div class="footer-cont">
                   <!-- Logo Telecall footer -->
                   <div class="logo-footer" id="internetDropdown">
-                      <a href="/index.html">
-                          <img width="130" alt="Logo Telecall - footer" data-toggle="tooltip" data-bs-placement="bottom" title="Telecall - Página Inicial" src="/assets/imgs/telecall-logo-white.png">
+                      <a href="../../../index.html">
+                          <img width="130" alt="Logo Telecall - footer" data-toggle="tooltip" data-bs-placement="bottom" title="Telecall - Página Inicial" src="../../../assets/imgs/telecall-logo-white.png">
                       </a>
                   </div>
                       <!-- Título redes sociais -->

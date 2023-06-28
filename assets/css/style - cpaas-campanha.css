@@ -204,6 +204,57 @@ main {
     font-size: 1.2rem;
 }
 /* ==-- Responsividade --== */
+@media screen and (max-width: 1080px) {
+    .elementor-container {
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+    }
+        .elementor-section {
+            padding: 0 0.625rem 1.25rem 0;
+        }
+            .elementor-box {
+                padding: 0 1rem 0 1.9rem;
+            }
+                .elementor-column {
+                    padding: 0;
+                }
+                    .elementor-button {
+                        padding: 1rem 2rem;
+                        font-size: 1.3rem;
+                        text-align: center;
+                        line-height: 1;
+                    }
+                        .fa {
+                            margin-left: 0.875rem;
+                            font-size: 1rem;
+                        }
+                            .elementor-image {
+                                margin: 0;
+                                text-align: center;
+                                width: 100%;
+                            }
+                                .elementor-image img {
+                                    width: 100%;
+                                }
+                                    .elementor-list-item {
+                                        display: flex;
+                                        justify-content: flex-start;
+                                        line-height: 1.7;
+                                        padding: 0 2.4rem;
+                                        margin: 2rem 0;
+                                        font-size: 1.4rem;
+                                    }
+                                .elementor-list-item i {
+                                    margin-right: 1rem;
+                                }
+                            .elementor-list-container i {
+                                font-size: 1.5rem;
+                            }
+                                .card-info {
+                                    width: 100%;
+                                }
+}
 @media screen and (max-width: 768px) {
     .elementor-container {
         display: block;
@@ -250,6 +301,9 @@ main {
                                 }
                             .elementor-list-container i {
                                 font-size: 1.5rem;
+                            }
+                            .card-info {
+                                width: 100%;
                             }
 }
   

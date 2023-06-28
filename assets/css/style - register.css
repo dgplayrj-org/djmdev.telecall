@@ -39,7 +39,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: var(--cor-bg);
-  background-image: url(/assets/imgs/SL-bg-bl.jpg);
+  background-image: url(../../assets/imgs/SL-bg-bl.jpg);
   background-position: top right;
   background-repeat: no-repeat;
   background-size: cover;

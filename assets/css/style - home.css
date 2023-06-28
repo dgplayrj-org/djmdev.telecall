@@ -282,6 +282,7 @@ main {
     color: var(--blue-text-default);
 }
 .mapa-image img {
+    width: 100%;
     position: relative;
     z-index: 0;
     border-radius: 40px;
@@ -305,7 +306,7 @@ main {
     padding: 3rem 7rem 7rem;
 }
 /* ==-- Responsividade --== */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 990px) {
     .elementor-container {
         display: block;
         justify-content: center;
@@ -341,6 +342,7 @@ main {
                                         width: 100%;
                                     }
                                         .icon-card img {
+                                            width: 17%;
                                             max-width: 200px;
                                         }
                                                 .elementor-space {
@@ -404,4 +406,103 @@ main {
     }
 
 }
+@media screen and (max-width: 768px) {
+    .elementor-container {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+    }
+        .elementor-section {
+            padding: 0 0.625rem 1.25rem 0;
+        }
+            .elementor-box {
+                padding: 0 1rem 0 1.9rem;
+            }
+                .elementor-column {
+                    padding: 0;
+                }
+                    .elementor-logo img {
+                        width: 100%;
+                    }
+                        .elementor-button {
+                            padding: 1rem 2rem;
+                            font-size: 1.3rem;
+                            text-align: center;
+                            line-height: 1;
+                        }
+                            .fa {
+                                margin-left: 0.875rem;
+                                font-size: 1rem;
+                            }
+                                .elementor-image img {
+                                    width: 100%;
+                                }
+                                    .card {
+                                        width: 100%;
+                                    }
+                                        .icon-card img {
+                                            width: 100%;
+                                            max-width: 100px;
+                                        }
+                                                .elementor-space {
+                                                    display: none;
+                                                }
+                                                        .elementor-head-title b {
+                                                            font-size: 1.8rem;
+                                                        }
+                                                                .elementor-title {
+                                                                    margin-top: 2rem;
+                                                                    font-size: 1.4rem;
+                                                                }
+                                                                    .elementor-button {
+                                                                        font-size: 0.9rem;
+                                                                        padding: 0.75rem 1.25rem;
+                                                                    }
+                                                                        .elementor-list-item img {
+                                                                            width: 50px;
+                                                                            padding: 0;
+                                                                        }
+                                                                            .list-image img {
+                                                                                margin: 0 0 2rem 0;
+                                                                                width: 100%;
+                                                                            }
+                                                                                .list-container {
+                                                                                    font-size: 0.9rem;
+                                                                                }
+    .widget {
+        display: block;
+        margin: 2rem;
+    }
+    .elementor-widgetbox-image img {
+        border-radius: 0 0px 8px 8px;
+    }
+    .elementor-widgetbox-text {
+        height: 300px;
+    }
 
+    .mapa-text {
+        position: static;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    .mapa-text b {
+        font-size: 1rem;
+    }
+    .mapa-image img {
+        width: 100%;
+        border-radius: 12px;
+        margin-bottom: 0;
+    }
+    .container-qs {
+        display: block;
+        align-items: center;
+        padding: 0rem;
+        margin-bottom: 4rem;
+    }
+    .mapa-container {
+        margin-left: 0rem;
+    }
+
+}

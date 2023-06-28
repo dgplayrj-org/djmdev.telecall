@@ -419,6 +419,10 @@ footer {
   .cards {
     display: none;
   }
+
+  .navbar-expand-lg {
+    flex-direction: unset !important;
+  }
 }
 @media screen and (max-width: 650px) {
   /* ====- Footer -==== */
