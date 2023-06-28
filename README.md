@@ -36,9 +36,13 @@ O objetivo principal do projeto era construir a parte do Front-End de um site qu
 ## Tecnologias Utilizadas
 
 - HTML5: Utilizado para a estruturação e marcação das páginas.
+
 - CSS3: Utilizado para a estilização e layout do site, garantindo uma aparência visualmente atraente.
+
 - JavaScript: Utilizado para adicionar interatividade e funcionalidades dinâmicas ao site.
+
 - Framework (Bootstrap): Utilizado para acelerar o desenvolvimento e fornece recursos adicionais ao projeto.
+
 - Bibliotecas: Foram usadas bibliotecas como a Font Awesome (biblioteca de ícones), jQuery (biblioteca JavaScript) e iziToast (biblioteca JavaScript para notificações).
 Essas bibliotecas foram incorporadas ao projeto para fornecer recursos adicionais e facilitar o desenvolvimento de determinadas funcionalidades, como manipulação do DOM, interação com o usuário e exibição de notificações.
 
