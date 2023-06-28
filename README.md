@@ -52,6 +52,6 @@ O projeto foi concluído com sucesso, atendendo a todos os requisitos e funciona
 
 ## Licença
 
-Este projeto está licenciado para uso exclusivo pelo grupo DJM developers (Grupo 10). Para mais informações, consulte o arquivo [LICENSE.md].
+Este projeto está licenciado para uso exclusivo pelo grupo DJM developers (Grupo 10). Para mais informações, consulte o arquivo [LICENSE.md](./LICENSE.md).
 
 Agradecemos a você por explorar nosso projeto e esperamos que ele possa servir de inspiração e aprendizado para outros desenvolvedores. Estamos orgulhosos de apresentar o resultado do nosso trabalho e esperamos que ele atenda às expectativas da Telecall e dos usuários do site.
