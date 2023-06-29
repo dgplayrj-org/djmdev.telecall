@@ -329,8 +329,7 @@ footer {
   .nav-list {
       position: absolute;
       top: 100%;
-      right: 1px;
-      width: 80.4vw;
+      width: 90%;
       border-radius: 0 0 0px 8px;
       background: #8a0000;
       opacity: 0;
